@@ -18,7 +18,7 @@ export default styled(TrainerCard)`
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
-  background-image: linear-gradient(120deg, #bfbfbf 0%, #bebebe 100%);
+  background-image: linear-gradient(120deg, #ffffff 0%, #bebebea2 100%);
   box-shadow: 0 8px 12px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -28,7 +28,7 @@ export default styled(TrainerCard)`
   /* min-height: 100%; */
   padding: 20px;
   margin: 15px;
-  /* color: white; */
+  color: black;
   img {
     height: 250px;
     width: auto;

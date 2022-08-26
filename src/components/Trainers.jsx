@@ -20,7 +20,7 @@ const TrainersTeam = [
     id: 1,
     Name: "Alex Suarez",
     Image: FotoAlex,
-    Resume: "soy una membraza o titulo",
+    Resume: "Entrenador de potencial humano",
   },
   {
     id: 2,
@@ -68,9 +68,11 @@ const Trainers = ({ className }) => {
 };
 
 export default styled(Trainers)`
-  background-image: linear-gradient(120deg, #00dc6a 0%, #d8df1e 100%);
+  padding:40px 0; 
+  /* background-color:black; */
   height: 100%;
   width: 100vw;
+  /* color:white; */
   #trainers{
     width: 100vw;
   }  
@@ -79,6 +81,7 @@ export default styled(Trainers)`
         /* height:800px; */
     }
   h2 {
-    margin: 20px 0;
+    padding:10px 0;
+     
   }
 `;
