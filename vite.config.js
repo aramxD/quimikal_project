@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'https://juliosantacruz.dev/quimikal_project/',
+  base: 'https://www.quimikal.com/',
   plugins: [react()]
 })
