@@ -11,8 +11,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 
-import FotoAlex from "../assets/TrainerAlexSuarez.png";
-import FotoDiego from "../assets/TrainerDiegoEspinosa.png";
+import FotoAlex from "../assets/TrainerAlexSuarez2.png";
+import FotoDiego from "../assets/TrainerDiegoEspinosa2.png";
 import FotoMariano from "../assets/TrainerMarianoShapovaloff.png";
 
 const TrainersTeam = [
@@ -20,18 +20,22 @@ const TrainersTeam = [
     id: 1,
     Name: "Alex Suarez",
     Image: FotoAlex,
-    Resume: "Entrenador de potencial humano",
+    Title: 'Entrenador de potencial humano',
+    Resume: `Entrenador y facilitador de procesos transformacionales y coach profesional. 
+    Con 8 años de experiencia en el mundo del desarrollo integral y más de 100 talleres impartidos en varios países como Ecuador, Colombia Perú y México`,
   },
   {
     id: 2,
     Name: "Diego Espinosa",
     Image: FotoDiego,
+    Title: 'Entrenador de potencial humano',
     Resume: "soy una membraza o titulo",
   },
   {
     id: 3,
     Name: "Mariano Shapovaloff",
     Image: FotoMariano,
+    Title: 'Entrenador de potencial humano',
     Resume: "soy una membraza o titulo",
   },
 ];
@@ -45,7 +49,7 @@ const Trainers = ({ className }) => {
       <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={5}
-      slidesPerView={1.2}
+      slidesPerView={1}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
@@ -72,6 +76,7 @@ export default styled(Trainers)`
   /* background-color:black; */
   height: 100%;
   width: 100vw;
+  margin: 0 auto;
   /* color:white; */
   #trainers{
     width: 100vw;

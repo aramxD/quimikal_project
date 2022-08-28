@@ -7,6 +7,7 @@ const TrainerCard = ({ className, Trainer }) => {
       <img src={Trainer.Image} alt={Trainer.Name} />
       <div className="trainerData">
         <h3>{Trainer.Name}</h3>
+        <h4>{Trainer.Title}</h4>
         <p>{Trainer.Resume}</p>
       </div>
     </article>
@@ -16,23 +17,33 @@ const TrainerCard = ({ className, Trainer }) => {
 export default styled(TrainerCard)`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   flex: 1;
-  background-image: linear-gradient(120deg, #ffffff 0%, #bebebea2 100%);
-  box-shadow: 0 8px 12px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-radius: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.752);
+  
   /* width: 80%; */
   /* min-height: 100%; */
-  padding: 20px;
-  margin: 15px;
+  /* padding: 20px;
+  margin: 15px; */
   color: black;
   img {
-    height: 250px;
-    width: auto;
+    height: 320px;
+    width: 400px;
     border-radius: 10px;
     object-fit: contain;
+    /* CARD */
+    background-image: linear-gradient(0deg, #585858 0%, #ffffffa1 100%);
+    /* box-shadow: 0 8px 12px 0 rgba(31, 38, 135, 0.37); */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.752);
+  }
+  h3{
+    font-size:30px;
+    margin:20px 0;
+  }
+  h4{
+    font-size:25px;
+    margin:20px 0;
   }
 `;

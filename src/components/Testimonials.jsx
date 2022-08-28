@@ -68,8 +68,8 @@ const Testimonials = ({ className }) => {
 };
 
 export default styled(Testimonials)`
-width:95vw;
-  margin: 20px 0;
+width:90vw;
+  margin: 20px auto;
   h2 {
     text-align: center;
   }

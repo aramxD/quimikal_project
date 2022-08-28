@@ -13,7 +13,7 @@ export default styled(CTA)`
   --rojo-alerta: #ff2c2c;
   --rojo-hover: #c72828;
   --rojo-click: #be0000;
-  width: 95vw;
+  width: 100%;
   button {
     width: 100%;
     border-radius: 10px;

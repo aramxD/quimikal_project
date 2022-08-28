@@ -45,7 +45,7 @@ const Methodology = ({className})=>{
 }
 
 export default styled(Methodology)`
-    width:95vw;
+    width:90vw;
     margin:0 auto;
     h2{
     margin: 30px 0;

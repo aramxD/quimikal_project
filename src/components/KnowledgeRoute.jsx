@@ -57,7 +57,7 @@ export default styled(KnowledgeRoute)`
   background-color: #fff;
   align-items: center;
   color: black;
-  width: 95%;
+  width: 90vw;
   margin: 20px auto;
   article {
     display: flex;
