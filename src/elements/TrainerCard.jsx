@@ -20,16 +20,22 @@ export default styled(TrainerCard)`
   justify-content: center;
   flex: 1;
   
-  /* width: 80%; */
+
+
+
+
+align-items: center;
+  
+  width: 80%;
   /* min-height: 100%; */
-  /* padding: 20px;
-  margin: 15px; */
+  /* padding: 20px; */
+  margin: 0 auto;
   color: black;
   img {
     height: 320px;
-    width: 400px;
+    width: 320px;
     border-radius: 10px;
-    object-fit: contain;
+    object-fit: cover;
     /* CARD */
     background-image: linear-gradient(0deg, #585858 0%, #ffffffa1 100%);
     /* box-shadow: 0 8px 12px 0 rgba(31, 38, 135, 0.37); */

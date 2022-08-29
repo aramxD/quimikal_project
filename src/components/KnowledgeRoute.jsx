@@ -25,7 +25,7 @@ const KnowledgeSteps = [
     content:
       "Enseñar al aprendiz a llevar a cabo coaching tanto a la acción o a la emoción.   (www.icf.org)",
     image:
-      "https://images.unsplash.com/photo-1526584720376-57b19fffff13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "https://images.unsplash.com/photo-1502919280275-1bed9aca68ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
   },
 ];
 
@@ -46,7 +46,7 @@ const KnowledgeRoute = ({ className }) => {
         </article>
       ))}
 
-      <CTA/>
+      <CTA />
     </section>
   );
 };
@@ -64,22 +64,39 @@ export default styled(KnowledgeRoute)`
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
+    height: 200px;
     background-color: gray;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
   }
   article:nth-child(odd) {
     flex-direction: row-reverse;
   }
   article .articleContent {
-    width: 45%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    height: 100%;
+    width: 50%;
     text-align: center;
   }
+  article .articleContent h3 {
+    font-size: 25px;
+  }
+  article .articleContent p {
+    font-size: 18px;
+  }
   article .articleImage {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     width: 45%;
+    height: 100%;
   }
   article img {
     width: 100%;
+    border-radius:15px;
   }
 `;
