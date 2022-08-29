@@ -89,16 +89,22 @@ Error generating stack: `+l.message+`
   justify-content: center;
   flex: 1;
   
-  /* width: 80%; */
+
+
+
+
+align-items: center;
+  
+  width: 80%;
   /* min-height: 100%; */
-  /* padding: 20px;
-  margin: 15px; */
+  /* padding: 20px; */
+  margin: 0 auto;
   color: black;
   img {
     height: 320px;
-    width: 400px;
+    width: 320px;
     border-radius: 10px;
-    object-fit: contain;
+    object-fit: cover;
     /* CARD */
     background-image: linear-gradient(0deg, #585858 0%, #ffffffa1 100%);
     /* box-shadow: 0 8px 12px 0 rgba(31, 38, 135, 0.37); */
@@ -166,7 +172,7 @@ Error generating stack: `+l.message+`
   button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
   }
-`,W0=[{id:1,title:"Modulo 1",content:"Introducir al aprendiz al mundo del coaching y c\xF3mo \xE9ste se puede llevar a cabo en sala, a un grupo o individuo.",image:"https://images.unsplash.com/photo-1617113937231-7942715f868e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"},{id:2,title:"Modulo 2",content:"Identificar en s\xED mismo y en las dem\xE1s (personas, grupos o          sociedades) cu\xE1les son las heridas.  ",image:"https://images.unsplash.com/photo-1470506926202-05d3fca84c9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"},{id:3,title:"Modulo 3",content:"Ense\xF1ar al aprendiz a llevar a cabo coaching tanto a la acci\xF3n o a la emoci\xF3n.   (www.icf.org)",image:"https://images.unsplash.com/photo-1526584720376-57b19fffff13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"}],U0=({className:e})=>ae("section",{className:e,children:[V("h2",{children:"Ruta de Aprendizaje"}),W0.map(t=>ae("article",{children:[ae("div",{className:"articleContent",children:[V("h3",{children:t.title}),V("p",{children:t.content})]}),V("div",{className:"articleImage",children:V("img",{src:t.image,alt:""})})]},t.id)),V(Yf,{})]}),Y0=on(U0)`
+`,W0=[{id:1,title:"Modulo 1",content:"Introducir al aprendiz al mundo del coaching y c\xF3mo \xE9ste se puede llevar a cabo en sala, a un grupo o individuo.",image:"https://images.unsplash.com/photo-1617113937231-7942715f868e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"},{id:2,title:"Modulo 2",content:"Identificar en s\xED mismo y en las dem\xE1s (personas, grupos o          sociedades) cu\xE1les son las heridas.  ",image:"https://images.unsplash.com/photo-1470506926202-05d3fca84c9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"},{id:3,title:"Modulo 3",content:"Ense\xF1ar al aprendiz a llevar a cabo coaching tanto a la acci\xF3n o a la emoci\xF3n.   (www.icf.org)",image:"https://images.unsplash.com/photo-1502919280275-1bed9aca68ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"}],U0=({className:e})=>ae("section",{className:e,children:[V("h2",{children:"Ruta de Aprendizaje"}),W0.map(t=>ae("article",{children:[ae("div",{className:"articleContent",children:[V("h3",{children:t.title}),V("p",{children:t.content})]}),V("div",{className:"articleImage",children:V("img",{src:t.image,alt:""})})]},t.id)),V(Yf,{})]}),Y0=on(U0)`
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -179,23 +185,40 @@ Error generating stack: `+l.message+`
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
+    height: 200px;
     background-color: gray;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
   }
   article:nth-child(odd) {
     flex-direction: row-reverse;
   }
   article .articleContent {
-    width: 45%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    height: 100%;
+    width: 50%;
     text-align: center;
   }
+  article .articleContent h3 {
+    font-size: 25px;
+  }
+  article .articleContent p {
+    font-size: 18px;
+  }
   article .articleImage {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     width: 45%;
+    height: 100%;
   }
   article img {
     width: 100%;
+    border-radius:15px;
   }
 `,Q0="https://www.quimikal.com/assets/educator.f063a11d.svg",X0="https://www.quimikal.com/assets/metas.043fbd06.svg",K0="https://www.quimikal.com/assets/couchibg.b9131c42.svg",q0="https://www.quimikal.com/assets/teamwork.b7ce3bfd.svg",Z0="https://www.quimikal.com/assets/pares.a46f0b11.svg",J0="https://www.quimikal.com/assets/staff.9202bba8.svg",e1=({className:e})=>ae("section",{className:e,children:[V("h2",{children:"Metodologia"}),ae("div",{className:"methodologyStep",children:[V("p",{children:"Modulos Presenciales"}),V("img",{src:Q0,alt:""})]}),ae("div",{className:"methodologyStep",children:[V("p",{children:"Tareas, Metas y Planes guiadas"}),V("img",{src:X0,alt:""})]}),ae("div",{className:"methodologyStep",children:[V("p",{children:"Coachings personales y Mejora continua"}),V("img",{src:K0,alt:""})]}),ae("div",{className:"methodologyStep",children:[V("p",{children:"Practicas de coaching"}),V("img",{src:q0,alt:""})]}),ae("div",{className:"methodologyStep",children:[V("p",{children:"Coaching observados"}),V("img",{src:Z0,alt:""})]}),ae("div",{className:"methodologyStep",children:[V("p",{children:"Practicas Staff"}),V("img",{src:J0,alt:""})]})]}),t1=on(e1)`
     width:90vw;
