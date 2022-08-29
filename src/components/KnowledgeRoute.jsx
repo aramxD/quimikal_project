@@ -46,7 +46,7 @@ const KnowledgeRoute = ({ className }) => {
         </article>
       ))}
 
-      <CTA />
+      {/* <CTA /> */}
     </section>
   );
 };
