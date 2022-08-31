@@ -32,12 +32,19 @@ paypal.Buttons({
   }
 }).render('#paypal-button-container');
 
-
+function onClickSignInButton(){
+  console.log('holis')
+}
 
 const CTA = ({ className }) => {
   return (
     <div className={className}>
-       <div id="paypal-button-container"></div>
+
+      <button onClick={onClickSignInButton}>INSCRIBETE!</button>
+      <form action="" className="SignInForm">
+        <div id="paypal-button-container"></div>
+      </form>
+       
     </div>
   );
 };
@@ -74,5 +81,8 @@ export default styled(CTA)`
   button:focus,
   button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
+  }
+  .SignInForm{
+    display:none
   }
 `;
