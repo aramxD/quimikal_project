@@ -1,50 +1,149 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import Modal from "./Modal";
 
+paypal
+  .Buttons({
+    style: {
+      color: "blue",
+      label: "pay",
+    },
+    // Sets up the transaction when a payment button is clicked
+    createOrder: (data, actions) => {
+      return actions.order.create({
+        purchase_units: [
+          {
+            amount: {
+              value: "1", // Can also reference a variable or function
+            },
+          },
+        ],
+      });
+    },
+    // Finalize the transaction after payer approval
+    onApprove: (data, actions) => {
+      return actions.order.capture().then(function (orderData) {
+        // Successful capture! For dev/demo purposes:
+        console.log(
+          "Capture result",
+          orderData,
+          JSON.stringify(orderData, null, 2)
+        );
+        const transaction = orderData.purchase_units[0].payments.captures[0];
+        // alert(`Transaction ${transaction.status}: ${transaction.id}\n\nSee console for all available details`);
+        // When ready to go live, remove the alert and show a success message within this page. For example:
+        const element = document.getElementById("paypal-button-container");
+        element.innerHTML = "<h3>Thank you for your payment!</h3>";
+        // Or go to another URL:  actions.redirect('thank_you.html');
+      });
+    },
+  })
+  .render("#paypal-button-container");
 
-paypal.Buttons({
-  style:{
-    color:'blue',
-    label:'pay',
-  },
-  // Sets up the transaction when a payment button is clicked
-  createOrder: (data, actions) => {
-    return actions.order.create({
-      purchase_units: [{
-        amount: {
-          value: '1' // Can also reference a variable or function
-        }
-      }]
-    });
-  },
-  // Finalize the transaction after payer approval
-  onApprove: (data, actions) => {
-    return actions.order.capture().then(function(orderData) {
-      // Successful capture! For dev/demo purposes:
-      console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-      const transaction = orderData.purchase_units[0].payments.captures[0];
-      // alert(`Transaction ${transaction.status}: ${transaction.id}\n\nSee console for all available details`);
-      // When ready to go live, remove the alert and show a success message within this page. For example:
-      const element = document.getElementById('paypal-button-container');
-      element.innerHTML = '<h3>Thank you for your payment!</h3>';
-      // Or go to another URL:  actions.redirect('thank_you.html');
-    });
-  }
-}).render('#paypal-button-container');
+function sendData(data) {
+  var formdata = new FormData();
+  formdata.append("name", data.name);
+  formdata.append("last_name", data.last_name);
+  formdata.append("email", data.email);
+  formdata.append("contact_number", data.contact_number);
 
-function onClickSignInButton(){
-  console.log('holis')
+  var requestOptions = {
+    method: "POST",
+    body: formdata,
+    redirect: "follow",
+  };
+
+  fetch("https://le-restapi-test.herokuapp.com/api/v1/quimikal", requestOptions)
+    .then((response) => response.text())
+    .then((result) => console.log(result))
+    .catch((error) => console.log("error", error));
 }
 
 const CTA = ({ className }) => {
+  const [showModal, setShowModal] = useState(false);
+  const [stepForm, setStepForm] = useState(false);
+  const [dataForm, setDataForm] = useState({
+    name: "",
+    last_name: "",
+    email: "",
+    contact_number: "",
+  });
+  console.log(showModal);
+
+  const onChange = (event) => {
+    const dato = event.target.value;
+    setDataForm({
+      ...dataForm,
+
+      [event.target.name]: dato,
+    });
+    //  console.log(dataForm)
+  };
+
+  const onSubmit = (event) => {
+    sendData(dataForm);
+    setStepForm(true);
+    console.log(dataForm);
+  };
+
   return (
     <div className={className}>
+      <div className="CTA">
+      <button  onClick={() => setShowModal(!showModal)}>
+        INSCRIBETE!
+      </button>
+</div>
+      <Modal
+        title="Inscribete"
+        showModal={showModal}
+        setShowModal={setShowModal}
+      >
+        {!stepForm && (
+          <form onSubmit={onSubmit} className="SignInForm ">
+            <label htmlFor="nombre">Nombre:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="name"
+              value={dataForm.nombre}
+              onChange={onChange}
+            />
+            <label htmlFor="apeido">Apeido:</label>
+            <input
+              type="text"
+              id="apeido"
+              name="last_name"
+              value={dataForm.apeido}
+              onChange={onChange}
+            />
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={dataForm.email}
+              onChange={onChange}
+            />
+            <label htmlFor="telefono">Telefono:</label>
+            <input
+              type="text"
+              id="telefono"
+              name="contact_number"
+              value={dataForm.telefono}
+              onChange={onChange}
+            />
+            <button type="button" onClick={() => onSubmit()}>
+              Siguiente
+            </button>
+          </form>
+        )}
 
-      <button onClick={onClickSignInButton}>INSCRIBETE!</button>
-      <form action="" className="SignInForm">
-        <div id="paypal-button-container"></div>
-      </form>
-       
+        
+           
+            <div id="paypal-button-container" className={`${stepForm? '':'hidden' }`}></div>
+           
+        
+      </Modal>
     </div>
   );
 };
@@ -55,7 +154,7 @@ export default styled(CTA)`
   --rojo-click: #be0000;
   width: 90vw;
   margin: 20px auto;
-  button {
+  .CTA button {
     width: 100%;
     border-radius: 10px;
     border: 1px solid transparent;
@@ -68,21 +167,44 @@ export default styled(CTA)`
     transition: border-color 0.25s;
     color: white;
   }
-  button:hover {
+  .CTA button:hover {
     background-color: var(--rojo-hover);
   }
-  button:focus,
-  button:active {
+  .CTA button:focus,
+  .CTA button:active {
     border-color: #da0000;
     background-color: var(--rojo-click);
 
     transform: translateY(5px);
   }
-  button:focus,
-  button:focus-visible {
+  .CTA button:focus,
+  .CTA button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
   }
-  .SignInForm{
-    display:none
+  .SignInForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form label {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+  form input {
+    text-align: left;
+    font-size: 20px;
+    border-radius: 5px;
+    height: 40px;
+    padding: 6px;
+    margin-bottom: 15px;
+  }
+  form button {
+    background: #2c46db;
+    color: white;
+  }
+  .hidden{
+    display:none;
   }
 `;

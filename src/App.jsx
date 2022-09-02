@@ -7,6 +7,7 @@ import KnowledgeRoute from './components/KnowledgeRoute'
 import Methodology from './components/Methodology'
 import Testimonials from './components/Testimonials'
 import Timer from './components/Timer'
+import Modal from './elements/Modal'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Methodology/>
       <Testimonials/>
       <Timer/>
+       
     </div>
   )
 }

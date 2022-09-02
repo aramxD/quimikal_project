@@ -14,16 +14,16 @@ const dateTimestampMs = 1664046000000;
 const Timer = ({ className }) => {
   const [remainingTime, setRemainingTime] = useState(defaultRemainingTime);
 
-  useEffect(() => {
-    const intervalID = setInterval(() => {
-      updateTime(dateTimestampMs);
-    }, 1000);
-    return () => clearInterval(intervalID);
-  }, [dateTimestampMs]);
+  // useEffect(() => {
+  //   const intervalID = setInterval(() => {
+       
+  //     setRemainingTime(getRemainingTimeUntilMsTimestamp(dateTimestampMs));
+      
+  //   }, 1000);
+  //   return () => clearInterval(intervalID);
+  // }, [dateTimestampMs]);
 
-  function updateTime(countdownDate) {
-    setRemainingTime(getRemainingTimeUntilMsTimestamp(countdownDate));
-  }
+  
 
   return (
     <section className={className}>

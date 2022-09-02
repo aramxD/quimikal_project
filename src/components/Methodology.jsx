@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import CTA from "../elements/CTA";
 import img1 from '../assets/educator.svg'
 import img2 from '../assets/metas.svg'
 import img3 from '../assets/couchibg.svg'
@@ -11,6 +12,7 @@ import img6 from '../assets/staff.svg'
 const Methodology = ({className})=>{
 
     return(
+      <>
         <section className={className}>
             <h2>Metodologia</h2>
         <div className="methodologyStep">
@@ -41,6 +43,7 @@ const Methodology = ({className})=>{
           <img src={img6} alt=""/>
         </div>
         </section>
+        <CTA/></>
     )
 }
 
