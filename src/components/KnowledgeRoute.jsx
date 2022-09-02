@@ -58,6 +58,7 @@ export default styled(KnowledgeRoute)`
   align-items: center;
   color: black;
   width: 90vw;
+  max-width: 800px;
   margin: 20px auto;
   article {
     display: flex;
@@ -98,5 +99,10 @@ export default styled(KnowledgeRoute)`
   article img {
     width: 100%;
     border-radius:15px;
+
+    @media (min-width: 600px) {
+    width:auto;
+    height:100%;
+  }
   }
 `;

@@ -117,6 +117,7 @@ export default styled(CTA)`
   --rojo-hover: #c72828;
   --rojo-click: #be0000;
   width: 90vw;
+  max-width: 800px;
   margin: 20px auto;
   .CTA button {
     width: 100%;

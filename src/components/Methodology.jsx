@@ -49,9 +49,11 @@ const Methodology = ({className})=>{
 
 export default styled(Methodology)`
     width:90vw;
+    max-width: 800px;
     margin:0 auto;
     h2{
     margin: 30px 0;
+    
 }
 .methodologyStep{
     display: flex;
@@ -61,9 +63,13 @@ export default styled(Methodology)`
     padding: 20px;
     border-radius: 20px;
     margin: 20px 0;
+    text-align:left;
+    @media (min-width: 600px) {
+    padding:20px 50px;
+  }
 }
 .methodologyStep:nth-child(odd){
-    flex-direction: row-reverse;
+    flex-direction: row-reverse;text-align:right;
 }
 .methodologyStep img{
     width: 30%;
@@ -71,6 +77,9 @@ export default styled(Methodology)`
 }
 .methodologyStep p{
     width: 70%;
-    font-size: var(--subtitle-fz);
+    font-size: 20px;
+    @media (min-width: 600px) {
+    font-size:24px;
+  }
 }
 `

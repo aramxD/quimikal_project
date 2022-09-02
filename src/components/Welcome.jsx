@@ -26,6 +26,7 @@ export default styled(Welcome)`
     display: flex;
     flex-direction: column;
     width: 90vw;
+    max-width: 800px;
     text-align: center;
     align-items: center;
     margin: 20px auto;

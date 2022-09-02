@@ -72,6 +72,7 @@ export default styled(Trainers)`
   /* background-color:black; */
   height: 100%;
   width: 100vw;
+  max-width: 800px;
   margin: 0 auto;
   /* color:white; */
   #trainers {

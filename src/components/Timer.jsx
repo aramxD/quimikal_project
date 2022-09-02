@@ -58,6 +58,7 @@ const Timer = ({ className }) => {
 
 export default styled(Timer)`
     width:90vw;
+    max-width: 800px;
     margin: 30px auto;
   .countDownTimer {
     margin: 20px 0;
