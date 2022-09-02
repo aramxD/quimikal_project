@@ -59,6 +59,7 @@ Error generating stack: `+l.message+`
     display: flex;
     flex-direction: column;
     width: 90vw;
+    max-width: 800px;
     text-align: center;
     align-items: center;
     margin: 20px auto;
@@ -127,6 +128,7 @@ align-items: center;
   /* background-color:black; */
   height: 100%;
   width: 100vw;
+  max-width: 800px;
   margin: 0 auto;
   /* color:white; */
   #trainers {
@@ -219,6 +221,7 @@ align-items: center;
   --rojo-hover: #c72828;
   --rojo-click: #be0000;
   width: 90vw;
+  max-width: 800px;
   margin: 20px auto;
   .CTA button {
     width: 100%;
@@ -280,6 +283,7 @@ align-items: center;
   align-items: center;
   color: black;
   width: 90vw;
+  max-width: 800px;
   margin: 20px auto;
   article {
     display: flex;
@@ -320,12 +324,19 @@ align-items: center;
   article img {
     width: 100%;
     border-radius:15px;
+
+    @media (min-width: 600px) {
+    width:auto;
+    height:100%;
+  }
   }
 `,q0="https://www.quimikal.com/assets/educator.f063a11d.svg",Z0="https://www.quimikal.com/assets/metas.043fbd06.svg",J0="https://www.quimikal.com/assets/couchibg.b9131c42.svg",e1="https://www.quimikal.com/assets/teamwork.b7ce3bfd.svg",t1="https://www.quimikal.com/assets/pares.a46f0b11.svg",n1="https://www.quimikal.com/assets/staff.9202bba8.svg",r1=({className:e})=>ie(Vl,{children:[ie("section",{className:e,children:[I("h2",{children:"Metodologia"}),ie("div",{className:"methodologyStep",children:[I("p",{children:"Modulos Presenciales"}),I("img",{src:q0,alt:""})]}),ie("div",{className:"methodologyStep",children:[I("p",{children:"Tareas, Metas y Planes guiadas"}),I("img",{src:Z0,alt:""})]}),ie("div",{className:"methodologyStep",children:[I("p",{children:"Coachings personales y Mejora continua"}),I("img",{src:J0,alt:""})]}),ie("div",{className:"methodologyStep",children:[I("p",{children:"Practicas de coaching"}),I("img",{src:e1,alt:""})]}),ie("div",{className:"methodologyStep",children:[I("p",{children:"Coaching observados"}),I("img",{src:t1,alt:""})]}),ie("div",{className:"methodologyStep",children:[I("p",{children:"Practicas Staff"}),I("img",{src:n1,alt:""})]})]}),I(Wf,{})]}),i1=rt(r1)`
     width:90vw;
+    max-width: 800px;
     margin:0 auto;
     h2{
     margin: 30px 0;
+    
 }
 .methodologyStep{
     display: flex;
@@ -335,9 +346,13 @@ align-items: center;
     padding: 20px;
     border-radius: 20px;
     margin: 20px 0;
+    text-align:left;
+    @media (min-width: 600px) {
+    padding:20px 50px;
+  }
 }
 .methodologyStep:nth-child(odd){
-    flex-direction: row-reverse;
+    flex-direction: row-reverse;text-align:right;
 }
 .methodologyStep img{
     width: 30%;
@@ -345,10 +360,14 @@ align-items: center;
 }
 .methodologyStep p{
     width: 70%;
-    font-size: var(--subtitle-fz);
+    font-size: 20px;
+    @media (min-width: 600px) {
+    font-size:24px;
+  }
 }
 `,l1=[{id:1,name:"juan castro",content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odit eos vitae",img:"https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"},{id:2,name:"maria sanchez",content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odit eos vitae",img:"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"},{id:3,name:"juan castro",content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odit eos vitae",img:"https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"}],s1=({className:e})=>ie("section",{className:e,children:[I("div",{className:"testimonyTitle",children:I("h2",{children:"Testimonios de Exito"})}),I("div",{className:"testimonyCards",children:I(Oa,{modules:[Af,Df,If,bf],spaceBetween:5,slidesPerView:1,onSlideChange:()=>console.log("slide change"),onSwiper:t=>console.log(t),children:l1.map(t=>I(za,{children:ie("article",{children:[I("img",{src:t.img,alt:"testimonio persona"}),I("h4",{children:t.name}),I("p",{children:I("em",{children:t.content})}),I("p",{children:"\u2B50\u2B50\u2B50\u2B50\u2B50"})]})},t.id))})})]}),o1=rt(s1)`
 width:90vw;
+max-width: 800px;
   margin: 20px auto;
   h2 {
     text-align: center;
@@ -370,6 +389,7 @@ width:90vw;
   }
 `;var a1={exports:{}};(function(e,t){(function(n,r){e.exports=r()})(Uf,function(){var n=1e3,r=6e4,i=36e5,l="millisecond",s="second",a="minute",o="hour",u="day",c="week",f="month",h="quarter",S="year",g="date",w="Invalid Date",v=/^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[Tt\s]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?[.:]?(\d+)?$/,d=/\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g,p={name:"en",weekdays:"Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"),months:"January_February_March_April_May_June_July_August_September_October_November_December".split("_")},m=function(O,_,z){var R=String(O);return!R||R.length>=_?O:""+Array(_+1-R.length).join(z)+O},y={s:m,z:function(O){var _=-O.utcOffset(),z=Math.abs(_),R=Math.floor(z/60),A=z%60;return(_<=0?"+":"-")+m(R,2,"0")+":"+m(A,2,"0")},m:function O(_,z){if(_.date()<z.date())return-O(z,_);var R=12*(z.year()-_.year())+(z.month()-_.month()),A=_.clone().add(R,f),T=z-A<0,$=_.clone().add(R+(T?-1:1),f);return+(-(R+(z-A)/(T?A-$:$-A))||0)},a:function(O){return O<0?Math.ceil(O)||0:Math.floor(O)},p:function(O){return{M:f,y:S,w:c,d:u,D:g,h:o,m:a,s,ms:l,Q:h}[O]||String(O||"").toLowerCase().replace(/s$/,"")},u:function(O){return O===void 0}},P="en",k={};k[P]=p;var D=function(O){return O instanceof C},L=function O(_,z,R){var A;if(!_)return P;if(typeof _=="string"){var T=_.toLowerCase();k[T]&&(A=T),z&&(k[T]=z,A=T);var $=_.split("-");if(!A&&$.length>1)return O($[0])}else{var F=_.name;k[F]=_,A=F}return!R&&A&&(P=A),A||!R&&P},G=function(O,_){if(D(O))return O.clone();var z=typeof _=="object"?_:{};return z.date=O,z.args=arguments,new C(z)},M=y;M.l=L,M.i=D,M.w=function(O,_){return G(O,{locale:_.$L,utc:_.$u,x:_.$x,$offset:_.$offset})};var C=function(){function O(z){this.$L=L(z.locale,null,!0),this.parse(z)}var _=O.prototype;return _.parse=function(z){this.$d=function(R){var A=R.date,T=R.utc;if(A===null)return new Date(NaN);if(M.u(A))return new Date;if(A instanceof Date)return new Date(A);if(typeof A=="string"&&!/Z$/i.test(A)){var $=A.match(v);if($){var F=$[2]-1||0,Y=($[7]||"0").substring(0,3);return T?new Date(Date.UTC($[1],F,$[3]||1,$[4]||0,$[5]||0,$[6]||0,Y)):new Date($[1],F,$[3]||1,$[4]||0,$[5]||0,$[6]||0,Y)}}return new Date(A)}(z),this.$x=z.x||{},this.init()},_.init=function(){var z=this.$d;this.$y=z.getFullYear(),this.$M=z.getMonth(),this.$D=z.getDate(),this.$W=z.getDay(),this.$H=z.getHours(),this.$m=z.getMinutes(),this.$s=z.getSeconds(),this.$ms=z.getMilliseconds()},_.$utils=function(){return M},_.isValid=function(){return this.$d.toString()!==w},_.isSame=function(z,R){var A=G(z);return this.startOf(R)<=A&&A<=this.endOf(R)},_.isAfter=function(z,R){return G(z)<this.startOf(R)},_.isBefore=function(z,R){return this.endOf(R)<G(z)},_.$g=function(z,R,A){return M.u(z)?this[R]:this.set(A,z)},_.unix=function(){return Math.floor(this.valueOf()/1e3)},_.valueOf=function(){return this.$d.getTime()},_.startOf=function(z,R){var A=this,T=!!M.u(R)||R,$=M.p(z),F=function(B,J){var q=M.w(A.$u?Date.UTC(A.$y,J,B):new Date(A.$y,J,B),A);return T?q:q.endOf(u)},Y=function(B,J){return M.w(A.toDate()[B].apply(A.toDate("s"),(T?[0,0,0,0]:[23,59,59,999]).slice(J)),A)},N=this.$W,j=this.$M,V=this.$D,U="set"+(this.$u?"UTC":"");switch($){case S:return T?F(1,0):F(31,11);case f:return T?F(1,j):F(0,j+1);case c:var E=this.$locale().weekStart||0,K=(N<E?N+7:N)-E;return F(T?V-K:V+(6-K),j);case u:case g:return Y(U+"Hours",0);case o:return Y(U+"Minutes",1);case a:return Y(U+"Seconds",2);case s:return Y(U+"Milliseconds",3);default:return this.clone()}},_.endOf=function(z){return this.startOf(z,!1)},_.$set=function(z,R){var A,T=M.p(z),$="set"+(this.$u?"UTC":""),F=(A={},A[u]=$+"Date",A[g]=$+"Date",A[f]=$+"Month",A[S]=$+"FullYear",A[o]=$+"Hours",A[a]=$+"Minutes",A[s]=$+"Seconds",A[l]=$+"Milliseconds",A)[T],Y=T===u?this.$D+(R-this.$W):R;if(T===f||T===S){var N=this.clone().set(g,1);N.$d[F](Y),N.init(),this.$d=N.set(g,Math.min(this.$D,N.daysInMonth())).$d}else F&&this.$d[F](Y);return this.init(),this},_.set=function(z,R){return this.clone().$set(z,R)},_.get=function(z){return this[M.p(z)]()},_.add=function(z,R){var A,T=this;z=Number(z);var $=M.p(R),F=function(j){var V=G(T);return M.w(V.date(V.date()+Math.round(j*z)),T)};if($===f)return this.set(f,this.$M+z);if($===S)return this.set(S,this.$y+z);if($===u)return F(1);if($===c)return F(7);var Y=(A={},A[a]=r,A[o]=i,A[s]=n,A)[$]||1,N=this.$d.getTime()+z*Y;return M.w(N,this)},_.subtract=function(z,R){return this.add(-1*z,R)},_.format=function(z){var R=this,A=this.$locale();if(!this.isValid())return A.invalidDate||w;var T=z||"YYYY-MM-DDTHH:mm:ssZ",$=M.z(this),F=this.$H,Y=this.$m,N=this.$M,j=A.weekdays,V=A.months,U=function(J,q,te,Q){return J&&(J[q]||J(R,T))||te[q].slice(0,Q)},E=function(J){return M.s(F%12||12,J,"0")},K=A.meridiem||function(J,q,te){var Q=J<12?"AM":"PM";return te?Q.toLowerCase():Q},B={YY:String(this.$y).slice(-2),YYYY:this.$y,M:N+1,MM:M.s(N+1,2,"0"),MMM:U(A.monthsShort,N,V,3),MMMM:U(V,N),D:this.$D,DD:M.s(this.$D,2,"0"),d:String(this.$W),dd:U(A.weekdaysMin,this.$W,j,2),ddd:U(A.weekdaysShort,this.$W,j,3),dddd:j[this.$W],H:String(F),HH:M.s(F,2,"0"),h:E(1),hh:E(2),a:K(F,Y,!0),A:K(F,Y,!1),m:String(Y),mm:M.s(Y,2,"0"),s:String(this.$s),ss:M.s(this.$s,2,"0"),SSS:M.s(this.$ms,3,"0"),Z:$};return T.replace(d,function(J,q){return q||B[J]||$.replace(":","")})},_.utcOffset=function(){return 15*-Math.round(this.$d.getTimezoneOffset()/15)},_.diff=function(z,R,A){var T,$=M.p(R),F=G(z),Y=(F.utcOffset()-this.utcOffset())*r,N=this-F,j=M.m(this,F);return j=(T={},T[S]=j/12,T[f]=j,T[h]=j/3,T[c]=(N-Y)/6048e5,T[u]=(N-Y)/864e5,T[o]=N/i,T[a]=N/r,T[s]=N/n,T)[$]||N,A?j:M.a(j)},_.daysInMonth=function(){return this.endOf(f).$D},_.$locale=function(){return k[this.$L]},_.locale=function(z,R){if(!z)return this.$L;var A=this.clone(),T=L(z,R,!0);return T&&(A.$L=T),A},_.clone=function(){return M.w(this.$d,this)},_.toDate=function(){return new Date(this.valueOf())},_.toJSON=function(){return this.isValid()?this.toISOString():null},_.toISOString=function(){return this.$d.toISOString()},_.toString=function(){return this.$d.toUTCString()},O}(),x=C.prototype;return G.prototype=x,[["$ms",l],["$s",s],["$m",a],["$H",o],["$W",u],["$M",f],["$y",S],["$D",g]].forEach(function(O){x[O[1]]=function(_){return this.$g(_,O[0],O[1])}}),G.extend=function(O,_){return O.$i||(O(_,C,G),O.$i=!0),G},G.locale=L,G.isDayjs=D,G.unix=function(O){return G(1e3*O)},G.en=k[P],G.Ls=k,G.p={},G})})(a1);const u1={segundos:"00",minutos:"00",horas:"00",dias:"00"},c1=({className:e})=>{const[t,n]=Z.exports.useState(u1);return ie("section",{className:e,children:[ie("div",{className:"timer",children:[I("p",{children:"\xBFEst\xE1s preparad@ para tu independencia econ\xF3mica?"}),I("p",{children:"\xA1TE ESPERAMOS!"}),I("h3",{children:"\xA1NO TE QUEDES FUERA!"}),ie("div",{className:"countDownTimer",children:[I("span",{children:t.dias}),I("span",{children:"dias"}),I("span",{children:t.horas}),I("span",{children:"hrs"}),I("span",{children:t.minutos}),I("span",{children:"min"}),I("span",{children:t.segundos}),I("span",{children:"s"})]})]}),ie("div",{className:"promo",children:[ie("p",{children:["NO TE PIERDAS ESTA GRAN OPORTUNIDAD ",I("br",{}),"\xA1 INICIA TU PROCESO DE CERTIFICACION!"]}),I("p",{className:"precioPromo",children:"$600USD"})]}),I(Wf,{})]})},d1=rt(c1)`
     width:90vw;
+    max-width: 800px;
     margin: 30px auto;
   .countDownTimer {
     margin: 20px 0;
