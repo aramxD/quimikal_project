@@ -60,6 +60,13 @@ export default styled(KnowledgeRoute)`
   width: 90vw;
   max-width: 800px;
   margin: 20px auto;
+  h2{
+    margin: 30px 0 10px 0;
+    border-top: solid 4px;
+    border-bottom: solid 4px;
+    padding: 20px 0;
+    width:100%;
+  }
   article {
     display: flex;
     align-items: center;

@@ -42,7 +42,7 @@ const TrainersTeam = [
 const Trainers = ({ className }) => {
   return (
     <section id="trainers" className={className}>
-      
+      <h2>Entrenadores</h2>
 
       <div className="trainersList">
         <Swiper
@@ -60,8 +60,8 @@ const Trainers = ({ className }) => {
           ))}
         </Swiper>
       </div>
-      <hr/>
-      <h2>Entrenadores</h2>
+      
+      
       
     </section>
   );
@@ -75,14 +75,18 @@ export default styled(Trainers)`
   max-width: 800px;
   margin: 0 auto;
   color:white;
+  h2{
+    margin: 30px auto 10px auto;
+    border-top: solid 4px;
+    border-bottom: solid 4px;
+    padding: 20px 0 10px;
+    width:90vw;
+  }
   #trainers {
     width: 100vw;
   }
   .trainersList {
     display: flex;
     /* height:800px; */
-  }
-  h2 {
-    padding: 20px 0;
-  }
+  } 
 `;
