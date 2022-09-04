@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <Welcome/>
-      <Payment/>
+      {/* <Payment/> */}
       <Trainers/> 
       <KnowledgeRoute/>
       <Methodology/>

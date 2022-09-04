@@ -119,7 +119,7 @@ export default styled(CTA)`
   width: 90vw;
   max-width: 800px;
   margin: 20px auto;
-  color:white;
+  color:black;
   .CTA button {
     width: 100%;
     border-radius: 10px;
