@@ -3,8 +3,6 @@ import styled from "styled-components";
 import Modal from "./Modal";
 import Payment from "./Payment";
 
-
-
 function sendData(data) {
   var formdata = new FormData();
   formdata.append("name", data.name);
@@ -54,10 +52,8 @@ const CTA = ({ className }) => {
   return (
     <div className={className}>
       <div className="CTA">
-      <button  onClick={() => setShowModal(!showModal)}>
-        INSCRIBETE!
-      </button>
-</div>
+        <button onClick={() => setShowModal(!showModal)}>INSCRIBETE!</button>
+      </div>
       <Modal
         title="Inscribete"
         showModal={showModal}
@@ -103,10 +99,7 @@ const CTA = ({ className }) => {
           </form>
         )}
 
-        {stepForm && <Payment/>}
-           
-           
-        
+        {stepForm && <Payment />}
       </Modal>
     </div>
   );
@@ -119,14 +112,15 @@ export default styled(CTA)`
   width: 90vw;
   max-width: 800px;
   margin: 20px auto;
-  color:black;
+  color: black;
   .CTA button {
     width: 100%;
     border-radius: 10px;
     border: 1px solid transparent;
     padding: 0.6em 1.2em;
-    font-size: 1.3em;
-    font-weight: 500;
+    font-size: 1.4em;
+    font-weight: 700;
+    font-style:oblique;
     font-family: inherit;
     background-color: var(--rojo-alerta);
     cursor: pointer;
@@ -170,7 +164,7 @@ export default styled(CTA)`
     background: #2c46db;
     color: white;
   }
-  .hidden{
-    display:none;
+  .hidden {
+    display: none;
   }
 `;

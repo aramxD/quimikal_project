@@ -54,7 +54,7 @@ const KnowledgeRoute = ({ className }) => {
 export default styled(KnowledgeRoute)`
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #000000;
   align-items: center;
   color: white;
   width: 90vw;

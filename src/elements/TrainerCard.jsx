@@ -42,11 +42,21 @@ export default styled(TrainerCard)`
     border: 1px solid rgba(0, 0, 0, 0.752);
   }
   h3 {
-    font-size: 30px;
+    font-size: 40px;
     margin: 20px 0;
+    font-style: oblique;
+    letter-spacing: 5px;
+    line-height: 40px;
   }
   h4 {
-    font-size: 25px;
+    font-size: 20px;
     margin: 20px 0;
+    font-style:italic;
+    width:100%;
+    border-bottom:2px solid white;
+  }
+  p{
+    font-size: 20px;
+    margin: 40px 0;
   }
 `;

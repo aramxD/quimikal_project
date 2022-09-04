@@ -28,6 +28,7 @@ export default styled(Welcome)`
     width: 90vw;
     max-width: 800px;
     text-align: center;
+    font-style:italic;
     align-items: center;
     margin: 20px auto;
     
@@ -37,17 +38,17 @@ export default styled(Welcome)`
         margin: 30px 0 10px 0;
         padding: 10px;
         width: 100%;
-        background-color: rgba(255, 255, 255, 0.527);
-        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.816);
+        border-radius: 45px;
     }
     p{
         margin: 15px 0;
-        font-size: 18px;
+        font-size: 20px;
     }
     p:nth-child(2){
         padding: 0 20px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
     }
     iframe{
     margin: 10px;

@@ -62,7 +62,7 @@ const Trainers = ({ className }) => {
       </div>
       <hr/>
       <h2>Entrenadores</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam ullam amet quidem officia dolorem tenetur voluptate ducimus necessitatibus optio, ab perferendis laboriosam fugiat, repellendus alias! Assumenda alias doloribus fuga vero.</p>
+      
     </section>
   );
 };
@@ -83,6 +83,6 @@ export default styled(Trainers)`
     /* height:800px; */
   }
   h2 {
-    padding: 10px 0;
+    padding: 20px 0;
   }
 `;
