@@ -16,21 +16,18 @@ const TrainerCard = ({ className, Trainer }) => {
 
 export default styled(TrainerCard)`
   display: flex;
+
   flex-direction: column;
   justify-content: center;
   flex: 1;
-  
 
+  align-items: center;
 
-
-
-align-items: center;
-  
   width: 80%;
   /* min-height: 100%; */
   /* padding: 20px; */
   margin: 0 auto;
-  color: black;
+  color: white;
   img {
     height: 320px;
     width: 320px;
@@ -44,12 +41,12 @@ align-items: center;
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.752);
   }
-  h3{
-    font-size:30px;
-    margin:20px 0;
+  h3 {
+    font-size: 30px;
+    margin: 20px 0;
   }
-  h4{
-    font-size:25px;
-    margin:20px 0;
+  h4 {
+    font-size: 25px;
+    margin: 20px 0;
   }
 `;

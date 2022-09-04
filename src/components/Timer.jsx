@@ -14,14 +14,14 @@ const dateTimestampMs = 1664046000000;
 const Timer = ({ className }) => {
   const [remainingTime, setRemainingTime] = useState(defaultRemainingTime);
 
-  // useEffect(() => {
-  //   const intervalID = setInterval(() => {
+  useEffect(() => {
+    const intervalID = setInterval(() => {
        
-  //     setRemainingTime(getRemainingTimeUntilMsTimestamp(dateTimestampMs));
+      setRemainingTime(getRemainingTimeUntilMsTimestamp(dateTimestampMs));
       
-  //   }, 1000);
-  //   return () => clearInterval(intervalID);
-  // }, [dateTimestampMs]);
+    }, 1000);
+    return () => clearInterval(intervalID);
+  }, [dateTimestampMs]);
 
   
 
@@ -60,6 +60,7 @@ export default styled(Timer)`
     width:90vw;
     max-width: 800px;
     margin: 30px auto;
+    color:white;
   .countDownTimer {
     margin: 20px 0;
   }

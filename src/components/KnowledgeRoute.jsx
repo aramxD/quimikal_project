@@ -56,7 +56,7 @@ export default styled(KnowledgeRoute)`
   flex-direction: column;
   background-color: #fff;
   align-items: center;
-  color: black;
+  color: white;
   width: 90vw;
   max-width: 800px;
   margin: 20px auto;

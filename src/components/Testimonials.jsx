@@ -70,6 +70,7 @@ const Testimonials = ({ className }) => {
 export default styled(Testimonials)`
 width:90vw;
 max-width: 800px;
+color:white;
   margin: 20px auto;
   h2 {
     text-align: center;

@@ -28,14 +28,14 @@ const TrainersTeam = [
     Name: "Diego Espinosa",
     Image: FotoDiego,
     Title: "Entrenador de potencial humano",
-    Resume: "soy una membraza o titulo",
+    Resume: "Master en coaching directivo y liderazgo, coach profesional en método points of new con más de 500 horas de capacitación en desarrollo humano, coordinador de programa de liderazgo en empresas internacionales, y 8 años de experiencia en transformación",
   },
   {
     id: 3,
-    Name: "Mariano Shapovaloff",
+    Name: "Mariano Schapovaloff",
     Image: FotoMariano,
     Title: "Entrenador de potencial humano",
-    Resume: "soy una membraza o titulo",
+    Resume: "Mentor y master en pnl, certificado en coaching ontológico, deportivo, ejecutivo, shadow coaching, especialista en desarrollo personal y liderazgo, entrenador de habilidades blandas, conferencista internacional, más de 2500 horas como coach, 15 años de experiencia.",
   },
 ];
 
@@ -74,7 +74,7 @@ export default styled(Trainers)`
   width: 100vw;
   max-width: 800px;
   margin: 0 auto;
-  /* color:white; */
+  color:white;
   #trainers {
     width: 100vw;
   }

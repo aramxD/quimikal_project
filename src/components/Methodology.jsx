@@ -51,6 +51,7 @@ export default styled(Methodology)`
     width:90vw;
     max-width: 800px;
     margin:0 auto;
+    color:white;
     h2{
     margin: 30px 0;
     

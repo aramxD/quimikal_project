@@ -30,6 +30,8 @@ export default styled(Welcome)`
     text-align: center;
     align-items: center;
     margin: 20px auto;
+    
+    color:white;
 
     img{
         margin: 30px 0 10px 0;

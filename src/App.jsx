@@ -7,7 +7,7 @@ import KnowledgeRoute from './components/KnowledgeRoute'
 import Methodology from './components/Methodology'
 import Testimonials from './components/Testimonials'
 import Timer from './components/Timer'
-import Modal from './elements/Modal'
+import Payment from './elements/Payment'
 
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
   return (
     <div className="App">
       <Welcome/>
+      <Payment/>
       <Trainers/> 
       <KnowledgeRoute/>
       <Methodology/>
