@@ -25,25 +25,34 @@ const Welcome = ({className})=>{
 export default styled(Welcome)`
     display: flex;
     flex-direction: column;
-    width: 90vw;
+    width: 100vw;
+    height:100vh;
+    padding:5vh 5vw;
     max-width: 800px;
     text-align: center;
     font-style:italic;
     align-items: center;
     margin: 20px auto;
     
-    color:white;
-
+    color:black;
+    background-image:url('https://images.unsplash.com/photo-1627931539006-d5c4677e05ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+    z-index:2;
     img{
         margin: 30px 0 10px 0;
         padding: 10px;
         width: 100%;
         background-color: rgba(255, 255, 255, 0.816);
-        border-radius: 45px;
+        border-radius: 35px;
     }
     p{
         margin: 15px 0;
         font-size: 20px;
+        background-color: rgba(255, 255, 255, 0.385);
+        border-radius: 35px;
+        padding:15px;
     }
     p:nth-child(2){
         padding: 0 20px;

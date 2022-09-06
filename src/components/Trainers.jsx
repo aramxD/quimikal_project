@@ -80,7 +80,7 @@ export default styled(Trainers)`
     border-top: solid 4px;
     border-bottom: solid 4px;
     padding: 20px 0 10px;
-    width:90vw;
+    width:100%;
   }
   #trainers {
     width: 100vw;
