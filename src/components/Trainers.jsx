@@ -48,7 +48,7 @@ const Trainers = ({ className }) => {
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={5}
-          slidesPerView={1.5}
+          slidesPerView={1.25}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
         >
