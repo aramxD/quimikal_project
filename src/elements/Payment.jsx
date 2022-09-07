@@ -60,9 +60,9 @@ const Payment = () => {
   return (
     <>
       {paidFor ? (
-        <h1>
+        <h3>
           Te has inscrito exitosamente, nos pondremos en contacto contigo pronto
-        </h1>
+        </h3>
       ) : (
         <div ref={(v) => (paypalRef = v)} />
       )}

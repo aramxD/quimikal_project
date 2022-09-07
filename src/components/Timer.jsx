@@ -61,14 +61,31 @@ export default styled(Timer)`
     max-width: 800px;
     margin: 30px auto;
     color:white;
+    .timer p{
+      font-size:20px;
+      font-style:italic; margin: 10px 0;
+    }
+    .timer h3{
+      font-size:30px;
+      margin: 20px 0;
+      color:rgb(190,21,34);
+    }
   .countDownTimer {
     margin: 20px 0;
   }
+   
   .countDownTimer span:nth-child(odd) {
-    font-size: 30px;
+    font-size: 30px;margin: 0  0 0 15px;
     font-weight: 600;
   }
   .countDownTimer span {
     font-size: 20px;
+    
+  }
+  .promo p{
+    font-style:italic;
+  }
+  .precioPromo{
+    font-size:34px;
   }
 `;
