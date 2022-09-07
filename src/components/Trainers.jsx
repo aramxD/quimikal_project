@@ -48,13 +48,13 @@ const Trainers = ({ className }) => {
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={5}
-          slidesPerView={1}
+          slidesPerView={1.5}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
         >
           {TrainersTeam.map((Trainer) => (
             <SwiperSlide key={Trainer.id}>
-              {" "}
+              
               <TrainerCard Trainer={Trainer} />
             </SwiperSlide>
           ))}
