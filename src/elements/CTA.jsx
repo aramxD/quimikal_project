@@ -31,7 +31,7 @@ const CTA = ({ className }) => {
     email: "",
     contact_number: "",
   });
-  console.log(showModal);
+  // console.log(showModal);
 
   const onChange = (event) => {
     const dato = event.target.value;
