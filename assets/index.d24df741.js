@@ -55,47 +55,51 @@ Error generating stack: `+l.message+`
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */var gg=Z.exports,vg=Symbol.for("react.element"),yg=Symbol.for("react.fragment"),wg=Object.prototype.hasOwnProperty,Sg=gg.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,xg={key:!0,ref:!0,__self:!0,__source:!0};function zf(e,t,n){var r,i={},l=null,s=null;n!==void 0&&(l=""+n),t.key!==void 0&&(l=""+t.key),t.ref!==void 0&&(s=t.ref);for(r in t)wg.call(t,r)&&!xg.hasOwnProperty(r)&&(i[r]=t[r]);if(e&&e.defaultProps)for(r in t=e.defaultProps,t)i[r]===void 0&&(i[r]=t[r]);return{$$typeof:vg,type:e,key:l,ref:s,props:i,_owner:Sg.current}}Hl.Fragment=yg;Hl.jsx=zf;Hl.jsxs=zf;(function(e){e.exports=Hl})(Bl);const Vl=Bl.exports.Fragment,b=Bl.exports.jsx,ie=Bl.exports.jsxs,Cg=({className:e})=>ie("section",{className:e,children:[b("img",{src:mg,alt:""}),b("p",{children:"Desde hace muchos a\xF1os, el coaching y el mentoring se han convertido en las opciones preferidas por millones de personas para dar saltos de calidad en sus vidas personales y profesionales."}),b("p",{children:b("u",{children:"En las \xE9pocas de crisis es una de las actividades de crecimiento exponencial; y se augura que, en la transformaci\xF3n actual y la aceleraci\xF3n digital, sea uno de los sectores con mayor relevancia. Quienes nos dedicamos a esta actividad en forma profesional observamos una mayor demanda en \xE9pocas de incertidumbre.    (fuente infobae.com)"})})]}),Eg=Xe(Cg)`
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height:100vh;
-    padding:5vh 5vw;
-    max-width: 800px;
-    text-align: center;
-    font-style:italic;
-    align-items: center;
-    margin: 20px auto;
-    
-    color:black;
-    background-image:url('https://images.unsplash.com/photo-1627931539006-d5c4677e05ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
-    background-position: center; /* Center the image */
+ */var gg=Z.exports,vg=Symbol.for("react.element"),yg=Symbol.for("react.fragment"),wg=Object.prototype.hasOwnProperty,Sg=gg.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,xg={key:!0,ref:!0,__self:!0,__source:!0};function zf(e,t,n){var r,i={},l=null,s=null;n!==void 0&&(l=""+n),t.key!==void 0&&(l=""+t.key),t.ref!==void 0&&(s=t.ref);for(r in t)wg.call(t,r)&&!xg.hasOwnProperty(r)&&(i[r]=t[r]);if(e&&e.defaultProps)for(r in t=e.defaultProps,t)i[r]===void 0&&(i[r]=t[r]);return{$$typeof:vg,type:e,key:l,ref:s,props:i,_owner:Sg.current}}Hl.Fragment=yg;Hl.jsx=zf;Hl.jsxs=zf;(function(e){e.exports=Hl})(Bl);const Vl=Bl.exports.Fragment,b=Bl.exports.jsx,ie=Bl.exports.jsxs,Cg=({className:e})=>ie("section",{className:e,children:[b("img",{src:mg,alt:""}),b("p",{children:"Desde hace muchos a\xF1os, el coaching y el mentoring se han convertido en las opciones preferidas por millones de personas para dar saltos de calidad en sus vidas personales y profesionales."}),b("p",{children:b("u",{children:"En las \xE9pocas de crisis es una de las actividades de crecimiento exponencial; y se augura que, en la transformaci\xF3n actual y la aceleraci\xF3n digital, sea uno de los sectores con mayor relevancia. Quienes nos dedicamos a esta actividad en forma profesional observamos una mayor demanda en \xE9pocas de incertidumbre. (fuente infobae.com)"})})]}),Eg=Xe(Cg)`
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 5vh 5vw;
+  max-width: 800px;
+  text-align: center;
+  font-style: italic;
+  align-items: center;
+  margin: 0 auto;
+
+  color: black;
+  background-image: url("https://images.unsplash.com/photo-1627931539006-d5c4677e05ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-    z-index:2;
-    img{
-        margin: 30px 0 10px 0;
-        padding: 10px;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.816);
-        border-radius: 35px;
-    }
-    p{
-        margin: 15px 0;
-        font-size: 20px;
-        background-color: rgba(255, 255, 255, 0.385);
-        border-radius: 35px;
-        padding:15px;
-    }
-    p:nth-child(2){
-        padding: 0 20px;
+  z-index: 2;
+  img {
+    margin: 30px 0 10px 0;
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.816);
+    border-radius: 35px;
+  }
+  p {
+    margin: 15px 0;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.568);
+    border-radius: 35px;
+    padding: 15px;
+    font-weight: 600;
+    letter-spacing:2px;
+  }
+  p:nth-child(2) {
+    padding: 0 20px;
     font-weight: 600;
     font-size: 20px;
-    }
-    iframe{
+    letter-spacing:1.2px;
+    
+}
+  iframe {
     margin: 10px;
     width: 100%;
-}
+  }
 `,kg=({className:e,Trainer:t})=>ie("article",{className:e,children:[b("img",{src:t.Image,alt:t.Name}),ie("div",{className:"trainerData",children:[b("h3",{children:t.Name}),b("h4",{children:t.Title}),b("p",{children:t.Resume})]})]}),Tg=Xe(kg)`
   display: flex;
 
@@ -239,7 +243,7 @@ Error generating stack: `+l.message+`
     img{
         width:100%;
     }
-`;const X0=()=>{const[e,t]=Z.exports.useState(!1),[n,r]=Z.exports.useState(!1);let i=Z.exports.useRef();return Z.exports.useEffect(()=>{const l=document.createElement("script");l.src="https://www.paypal.com/sdk/js?client-id=ARSWipJcIj-Y0bX5WwXTXuHuA08syrlGdexp6bQxwpuXOjXVlfWMEvBxBvGaDBtCiUt8TPryDP-85n4j&currency=USD&vault=true&locale=es_MX",l.addEventListener("load",()=>r(!0)),document.body.appendChild(l),n&&setTimeout(()=>{console.log("inicio paypal"),window.paypal.Buttons({style:{color:"blue",label:"pay"},createOrder:(s,a)=>a.order.create({purchase_units:[{amount:{value:"1"}}]}),onApprove:async(s,a)=>{const o=await a.order.capture();t(!0),console.log(o)}}).render(i),console.log("fin paypal")})}),b(Vl,{children:e?b("h1",{children:"Te has inscrito exitosamente, nos pondremos en contacto contigo pronto"}):b("div",{ref:l=>i=l})})},K0=Xe(X0)`
+`;const X0=()=>{const[e,t]=Z.exports.useState(!1),[n,r]=Z.exports.useState(!1);let i=Z.exports.useRef();return Z.exports.useEffect(()=>{const l=document.createElement("script");l.src="https://www.paypal.com/sdk/js?client-id=ARSWipJcIj-Y0bX5WwXTXuHuA08syrlGdexp6bQxwpuXOjXVlfWMEvBxBvGaDBtCiUt8TPryDP-85n4j&currency=USD&vault=true&locale=es_MX",l.addEventListener("load",()=>r(!0)),document.body.appendChild(l),n&&setTimeout(()=>{console.log("inicio paypal"),window.paypal.Buttons({style:{color:"blue",label:"pay"},createOrder:(s,a)=>a.order.create({purchase_units:[{amount:{value:"1"}}]}),onApprove:async(s,a)=>{const o=await a.order.capture();t(!0),console.log(o)}}).render(i),console.log("fin paypal")})}),b(Vl,{children:e?b("h3",{children:"Te has inscrito exitosamente, nos pondremos en contacto contigo pronto"}):b("div",{ref:l=>i=l})})},K0=Xe(X0)`
   color:black;
 `;function q0(e){var t=new FormData;t.append("name",e.name),t.append("last_name",e.last_name),t.append("email",e.email),t.append("contact_number",e.contact_number);var n={method:"POST",body:t,redirect:"follow"};fetch("https://le-restapi-test.herokuapp.com/api/v1/quimikal",n).then(r=>r.text()).then(r=>console.log(r)).catch(r=>console.log("error",r))}const Z0=({className:e})=>{const[t,n]=Z.exports.useState(!1),[r,i]=Z.exports.useState(!1),[l,s]=Z.exports.useState({name:"",last_name:"",email:"",contact_number:""});console.log(t);const a=u=>{const c=u.target.value;s({...l,[u.target.name]:c})},o=u=>{q0(l),i(!0),console.log(l)};return ie("div",{className:e,children:[b("div",{className:"CTA",children:b("button",{onClick:()=>n(!t),children:"INSCRIBETE!"})}),ie(G0,{title:"Inscribete",showModal:t,setShowModal:n,children:[!r&&ie("form",{onSubmit:o,className:"SignInForm ",children:[b("label",{htmlFor:"nombre",children:"Nombre:"}),b("input",{type:"text",id:"nombre",name:"name",value:l.nombre,onChange:a}),b("label",{htmlFor:"apeido",children:"Apeido:"}),b("input",{type:"text",id:"apeido",name:"last_name",value:l.apeido,onChange:a}),b("label",{htmlFor:"email",children:"Email"}),b("input",{type:"email",id:"email",name:"email",value:l.email,onChange:a}),b("label",{htmlFor:"telefono",children:"Telefono:"}),b("input",{type:"text",id:"telefono",name:"contact_number",value:l.telefono,onChange:a}),b("button",{type:"button",onClick:()=>o(),children:"Siguiente"})]}),r&&b(K0,{})]})]})},Qf=Xe(Z0)`
   --rojo-alerta: #ff2c2c;
@@ -403,12 +407,18 @@ Error generating stack: `+l.message+`
       font-size: 24px;
     }
   }
-`,c1=[{id:1,name:"juan castro",content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odit eos vitae",img:"https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"},{id:2,name:"maria sanchez",content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odit eos vitae",img:"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"},{id:3,name:"juan castro",content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odit eos vitae",img:"https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"}],d1=({className:e})=>ie("section",{className:e,children:[b("div",{className:"testimonyTitle",children:b("h2",{children:"Testimonios de Exito"})}),b("div",{className:"testimonyCards",children:b(Oa,{modules:[If,Rf,Ff,jf],spaceBetween:5,slidesPerView:1,onSlideChange:()=>console.log("slide change"),onSwiper:t=>console.log(t),children:c1.map(t=>b(La,{children:ie("article",{children:[b("img",{src:t.img,alt:"testimonio persona"}),b("h4",{children:t.name}),b("p",{children:b("em",{children:t.content})}),b("p",{children:"\u2B50\u2B50\u2B50\u2B50\u2B50"})]})},t.id))})})]}),f1=Xe(d1)`
-width:90vw;
-max-width: 800px;
-color:white;
+`,c1=[{id:1,name:"Juan Castro",content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odit eos vitae",img:"https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"},{id:2,name:"Maria Sanchez",content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odit eos vitae",img:"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"},{id:3,name:"Pedro Sanchez",content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odit eos vitae",img:"https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"}],d1=({className:e})=>ie("section",{className:e,children:[b("div",{className:"testimonyTitle",children:b("h2",{children:"Testimonios de Exito"})}),b("div",{className:"testimonyCards",children:b(Oa,{modules:[If,Rf,Ff,jf],spaceBetween:5,slidesPerView:1,onSlideChange:()=>console.log("slide change"),onSwiper:t=>console.log(t),children:c1.map(t=>b(La,{children:ie("article",{children:[b("img",{src:t.img,alt:"testimonio persona"}),b("h4",{children:t.name}),b("p",{children:b("em",{children:t.content})}),b("p",{children:"\u2B50\u2B50\u2B50\u2B50\u2B50"})]})},t.id))})})]}),f1=Xe(d1)`
+  width: 90vw;
+  max-width: 800px;
+
+  color: white;
   margin: 20px auto;
   h2 {
+    margin: 30px auto 10px auto;
+    border-top: solid 4px;
+    border-bottom: solid 4px;
+    padding: 20px 0 10px;
+    width: 100%;
     text-align: center;
   }
 
@@ -426,19 +436,48 @@ color:white;
     border-radius: 50%;
     object-fit: cover;
   }
+  .testimonyCards article h4 {
+    font-size: 24px;
+    margin: 25px 0 15px 0;
+  }
+  .testimonyCards article p {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .testimonyCards article p:nth-child(even) {
+    font-size: 28px;
+    margin: 10px 0;
+  }
 `;var Xf={exports:{}};(function(e,t){(function(n,r){e.exports=r()})(Kf,function(){var n=1e3,r=6e4,i=36e5,l="millisecond",s="second",a="minute",o="hour",u="day",c="week",f="month",h="quarter",S="year",g="date",w="Invalid Date",v=/^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[Tt\s]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?[.:]?(\d+)?$/,d=/\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g,p={name:"en",weekdays:"Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"),months:"January_February_March_April_May_June_July_August_September_October_November_December".split("_")},m=function(z,_,O){var R=String(z);return!R||R.length>=_?z:""+Array(_+1-R.length).join(O)+z},y={s:m,z:function(z){var _=-z.utcOffset(),O=Math.abs(_),R=Math.floor(O/60),A=O%60;return(_<=0?"+":"-")+m(R,2,"0")+":"+m(A,2,"0")},m:function z(_,O){if(_.date()<O.date())return-z(O,_);var R=12*(O.year()-_.year())+(O.month()-_.month()),A=_.clone().add(R,f),T=O-A<0,$=_.clone().add(R+(T?-1:1),f);return+(-(R+(O-A)/(T?A-$:$-A))||0)},a:function(z){return z<0?Math.ceil(z)||0:Math.floor(z)},p:function(z){return{M:f,y:S,w:c,d:u,D:g,h:o,m:a,s,ms:l,Q:h}[z]||String(z||"").toLowerCase().replace(/s$/,"")},u:function(z){return z===void 0}},P="en",k={};k[P]=p;var D=function(z){return z instanceof C},L=function z(_,O,R){var A;if(!_)return P;if(typeof _=="string"){var T=_.toLowerCase();k[T]&&(A=T),O&&(k[T]=O,A=T);var $=_.split("-");if(!A&&$.length>1)return z($[0])}else{var F=_.name;k[F]=_,A=F}return!R&&A&&(P=A),A||!R&&P},G=function(z,_){if(D(z))return z.clone();var O=typeof _=="object"?_:{};return O.date=z,O.args=arguments,new C(O)},M=y;M.l=L,M.i=D,M.w=function(z,_){return G(z,{locale:_.$L,utc:_.$u,x:_.$x,$offset:_.$offset})};var C=function(){function z(O){this.$L=L(O.locale,null,!0),this.parse(O)}var _=z.prototype;return _.parse=function(O){this.$d=function(R){var A=R.date,T=R.utc;if(A===null)return new Date(NaN);if(M.u(A))return new Date;if(A instanceof Date)return new Date(A);if(typeof A=="string"&&!/Z$/i.test(A)){var $=A.match(v);if($){var F=$[2]-1||0,Y=($[7]||"0").substring(0,3);return T?new Date(Date.UTC($[1],F,$[3]||1,$[4]||0,$[5]||0,$[6]||0,Y)):new Date($[1],F,$[3]||1,$[4]||0,$[5]||0,$[6]||0,Y)}}return new Date(A)}(O),this.$x=O.x||{},this.init()},_.init=function(){var O=this.$d;this.$y=O.getFullYear(),this.$M=O.getMonth(),this.$D=O.getDate(),this.$W=O.getDay(),this.$H=O.getHours(),this.$m=O.getMinutes(),this.$s=O.getSeconds(),this.$ms=O.getMilliseconds()},_.$utils=function(){return M},_.isValid=function(){return this.$d.toString()!==w},_.isSame=function(O,R){var A=G(O);return this.startOf(R)<=A&&A<=this.endOf(R)},_.isAfter=function(O,R){return G(O)<this.startOf(R)},_.isBefore=function(O,R){return this.endOf(R)<G(O)},_.$g=function(O,R,A){return M.u(O)?this[R]:this.set(A,O)},_.unix=function(){return Math.floor(this.valueOf()/1e3)},_.valueOf=function(){return this.$d.getTime()},_.startOf=function(O,R){var A=this,T=!!M.u(R)||R,$=M.p(O),F=function(B,J){var q=M.w(A.$u?Date.UTC(A.$y,J,B):new Date(A.$y,J,B),A);return T?q:q.endOf(u)},Y=function(B,J){return M.w(A.toDate()[B].apply(A.toDate("s"),(T?[0,0,0,0]:[23,59,59,999]).slice(J)),A)},N=this.$W,j=this.$M,V=this.$D,U="set"+(this.$u?"UTC":"");switch($){case S:return T?F(1,0):F(31,11);case f:return T?F(1,j):F(0,j+1);case c:var E=this.$locale().weekStart||0,K=(N<E?N+7:N)-E;return F(T?V-K:V+(6-K),j);case u:case g:return Y(U+"Hours",0);case o:return Y(U+"Minutes",1);case a:return Y(U+"Seconds",2);case s:return Y(U+"Milliseconds",3);default:return this.clone()}},_.endOf=function(O){return this.startOf(O,!1)},_.$set=function(O,R){var A,T=M.p(O),$="set"+(this.$u?"UTC":""),F=(A={},A[u]=$+"Date",A[g]=$+"Date",A[f]=$+"Month",A[S]=$+"FullYear",A[o]=$+"Hours",A[a]=$+"Minutes",A[s]=$+"Seconds",A[l]=$+"Milliseconds",A)[T],Y=T===u?this.$D+(R-this.$W):R;if(T===f||T===S){var N=this.clone().set(g,1);N.$d[F](Y),N.init(),this.$d=N.set(g,Math.min(this.$D,N.daysInMonth())).$d}else F&&this.$d[F](Y);return this.init(),this},_.set=function(O,R){return this.clone().$set(O,R)},_.get=function(O){return this[M.p(O)]()},_.add=function(O,R){var A,T=this;O=Number(O);var $=M.p(R),F=function(j){var V=G(T);return M.w(V.date(V.date()+Math.round(j*O)),T)};if($===f)return this.set(f,this.$M+O);if($===S)return this.set(S,this.$y+O);if($===u)return F(1);if($===c)return F(7);var Y=(A={},A[a]=r,A[o]=i,A[s]=n,A)[$]||1,N=this.$d.getTime()+O*Y;return M.w(N,this)},_.subtract=function(O,R){return this.add(-1*O,R)},_.format=function(O){var R=this,A=this.$locale();if(!this.isValid())return A.invalidDate||w;var T=O||"YYYY-MM-DDTHH:mm:ssZ",$=M.z(this),F=this.$H,Y=this.$m,N=this.$M,j=A.weekdays,V=A.months,U=function(J,q,te,Q){return J&&(J[q]||J(R,T))||te[q].slice(0,Q)},E=function(J){return M.s(F%12||12,J,"0")},K=A.meridiem||function(J,q,te){var Q=J<12?"AM":"PM";return te?Q.toLowerCase():Q},B={YY:String(this.$y).slice(-2),YYYY:this.$y,M:N+1,MM:M.s(N+1,2,"0"),MMM:U(A.monthsShort,N,V,3),MMMM:U(V,N),D:this.$D,DD:M.s(this.$D,2,"0"),d:String(this.$W),dd:U(A.weekdaysMin,this.$W,j,2),ddd:U(A.weekdaysShort,this.$W,j,3),dddd:j[this.$W],H:String(F),HH:M.s(F,2,"0"),h:E(1),hh:E(2),a:K(F,Y,!0),A:K(F,Y,!1),m:String(Y),mm:M.s(Y,2,"0"),s:String(this.$s),ss:M.s(this.$s,2,"0"),SSS:M.s(this.$ms,3,"0"),Z:$};return T.replace(d,function(J,q){return q||B[J]||$.replace(":","")})},_.utcOffset=function(){return 15*-Math.round(this.$d.getTimezoneOffset()/15)},_.diff=function(O,R,A){var T,$=M.p(R),F=G(O),Y=(F.utcOffset()-this.utcOffset())*r,N=this-F,j=M.m(this,F);return j=(T={},T[S]=j/12,T[f]=j,T[h]=j/3,T[c]=(N-Y)/6048e5,T[u]=(N-Y)/864e5,T[o]=N/i,T[a]=N/r,T[s]=N/n,T)[$]||N,A?j:M.a(j)},_.daysInMonth=function(){return this.endOf(f).$D},_.$locale=function(){return k[this.$L]},_.locale=function(O,R){if(!O)return this.$L;var A=this.clone(),T=L(O,R,!0);return T&&(A.$L=T),A},_.clone=function(){return M.w(this.$d,this)},_.toDate=function(){return new Date(this.valueOf())},_.toJSON=function(){return this.isValid()?this.toISOString():null},_.toISOString=function(){return this.$d.toISOString()},_.toString=function(){return this.$d.toUTCString()},z}(),x=C.prototype;return G.prototype=x,[["$ms",l],["$s",s],["$m",a],["$H",o],["$W",u],["$M",f],["$y",S],["$D",g]].forEach(function(z){x[z[1]]=function(_){return this.$g(_,z[0],z[1])}}),G.extend=function(z,_){return z.$i||(z(_,C,G),z.$i=!0),G},G.locale=L,G.isDayjs=D,G.unix=function(z){return G(1e3*z)},G.en=k[P],G.Ls=k,G.p={},G})})(Xf);const lc=Xf.exports;function p1(e){const t=lc(e),n=lc();return{segundos:h1(n,t),minutos:m1(n,t),horas:g1(n,t),dias:v1(n,t)}}function h1(e,t){const n=t.diff(e,"seconds")%60;return Gl(n,2)}function m1(e,t){const n=t.diff(e,"minutes")%60;return Gl(n,2)}function g1(e,t){const n=t.diff(e,"hours")%60;return Gl(n,2)}function v1(e,t){const n=t.diff(e,"days")%60;return Gl(n,2)}function Gl(e,t){const n=e.toString();return n.length>=t?n:"0".repeat(t-n.length)+n}const y1={segundos:"00",minutos:"00",horas:"00",dias:"00"},sc=1664046e6,w1=({className:e})=>{const[t,n]=Z.exports.useState(y1);return Z.exports.useEffect(()=>{const r=setInterval(()=>{n(p1(sc))},1e3);return()=>clearInterval(r)},[sc]),ie("section",{className:e,children:[ie("div",{className:"timer",children:[b("p",{children:"\xBFEst\xE1s preparad@ para tu independencia econ\xF3mica?"}),b("p",{children:"\xA1TE ESPERAMOS!"}),b("h3",{children:"\xA1NO TE QUEDES FUERA!"}),ie("div",{className:"countDownTimer",children:[b("span",{children:t.dias}),b("span",{children:"dias"}),b("span",{children:t.horas}),b("span",{children:"hrs"}),b("span",{children:t.minutos}),b("span",{children:"min"}),b("span",{children:t.segundos}),b("span",{children:"s"})]})]}),ie("div",{className:"promo",children:[ie("p",{children:["NO TE PIERDAS ESTA GRAN OPORTUNIDAD ",b("br",{}),"\xA1 INICIA TU PROCESO DE CERTIFICACION!"]}),b("p",{className:"precioPromo",children:"$600USD"})]}),b(Qf,{})]})},S1=Xe(w1)`
     width:90vw;
     max-width: 800px;
     margin: 30px auto;
     color:white;
+    .timer p{
+      font-size:20px;
+      font-style:italic; margin: 10px 0;
+    }
+    .timer h3{
+      font-size:30px;
+      margin: 20px 0;
+      color:rgb(190,21,34);
+    }
   .countDownTimer {
     margin: 20px 0;
   }
+   
   .countDownTimer span:nth-child(odd) {
-    font-size: 30px;
+    font-size: 30px;margin: 0  0 0 15px;
     font-weight: 600;
   }
   .countDownTimer span {
     font-size: 20px;
+    
+  }
+  .promo p{
+    font-style:italic;
+  }
+  .precioPromo{
+    font-size:34px;
   }
 `;function x1(){return ie("div",{className:"App",children:[b(Eg,{}),b(V0,{}),b(t1,{}),b(u1,{}),b(f1,{}),b(S1,{})]})}$s.createRoot(document.getElementById("root")).render(b(yt.StrictMode,{children:b(x1,{})}));
