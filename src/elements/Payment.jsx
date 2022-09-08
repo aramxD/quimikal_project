@@ -80,7 +80,7 @@ const Payment = () => {
           return actions.order.capture().then((details) => {
             const name = details.payer.name.given_name;
             setPaidFor(true);
-            alert(`Transaction completed by ${name}`);
+            
           });
         }}
       />

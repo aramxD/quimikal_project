@@ -7,6 +7,7 @@ import KnowledgeRoute from './components/KnowledgeRoute'
 import Methodology from './components/Methodology'
 import Testimonials from './components/Testimonials'
 import Timer from './components/Timer'
+import Footer from './components/Footer';
  
 const initialOptions = {
   "client-id": "ARSWipJcIj-Y0bX5WwXTXuHuA08syrlGdexp6bQxwpuXOjXVlfWMEvBxBvGaDBtCiUt8TPryDP-85n4j",
@@ -23,11 +24,13 @@ function App() {
 
     <div className="App">
       <Welcome/>
-       <Trainers/> 
       <KnowledgeRoute/>
+       <Trainers/> 
+      
       <Methodology/>
       <Testimonials/>
       <Timer/>
+      <Footer/>
        
     </div>
     </PayPalScriptProvider>

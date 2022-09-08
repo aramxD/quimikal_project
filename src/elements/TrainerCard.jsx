@@ -23,14 +23,14 @@ export default styled(TrainerCard)`
 
   align-items: center;
 
-  width: 80%;
+  width: 85%;
   /* min-height: 100%; */
   /* padding: 20px; */
   margin: 0 auto;
   color: white;
   img {
-    height: 320px;
-    width: 320px;
+    height: 220px;
+    width: 220px;
     border-radius: 10px;
     object-fit: cover;
     /* CARD */
@@ -40,6 +40,10 @@ export default styled(TrainerCard)`
     -webkit-backdrop-filter: blur(16px);
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.752);
+  }
+  .trainerData{
+    width:100%;
+    text-align:center;
   }
   h3 {
     font-size: 40px;
@@ -56,7 +60,8 @@ export default styled(TrainerCard)`
     border-bottom:2px solid white;
   }
   p{
-    font-size: 20px;
-    margin: 40px 0;
+    font-size: 18px;
+    margin: 30px 0;
+    letter-spacing: 1.5px;
   }
 `;
