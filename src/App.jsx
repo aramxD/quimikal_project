@@ -10,7 +10,7 @@ import Timer from './components/Timer'
 import Footer from './components/Footer';
  
 const initialOptions = {
-  "client-id": "ARSWipJcIj-Y0bX5WwXTXuHuA08syrlGdexp6bQxwpuXOjXVlfWMEvBxBvGaDBtCiUt8TPryDP-85n4j",
+  "client-id": "AZOcVqZIJ-DQDK76__TvAOLVxDSkSJeSn2ky9nkPL7XuFNs9TrAA2l4bWS-uZ6KXU2Q1dJFLkN_53u8y",
   currency: "USD",
   intent: "capture",
    };

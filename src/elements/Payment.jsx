@@ -70,7 +70,7 @@ const Payment = () => {
             purchase_units: [
               {
                 amount: {
-                  value: "1.99",
+                  value: "1",
                 },
               },
             ],
