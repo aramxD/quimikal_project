@@ -44,12 +44,12 @@ const Gallery = ({ className }) => {
           // when window width is >= 640px
           640: {
             width: 640,
-            slidesPerView: 2,
+            slidesPerView: 1,
           },
           // when window width is >= 768px
           768: {
             width: 768,
-            slidesPerView: 3,
+            slidesPerView: 2,
           },
         }}
         modules={[Navigation, Pagination, Scrollbar, A11y]}
