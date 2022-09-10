@@ -11,14 +11,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 import FotoAlex from "../assets/TrainerAlexSuarez2.png";
+import N_Alex from "../assets/T_Colombia.png"
 import FotoDiego from "../assets/TrainerDiegoEspinosa2.png";
+import N_Diego from "../assets/T_Ecuador.png"
 import FotoMariano from "../assets/TrainerMarianoShapovaloff.png";
+import N_Mariano from "../assets/T_Argentina.png"
 
 const TrainersTeam = [
   {
     id: 1,
     Name: "Diego Espinosa",
     Image: FotoDiego,
+    Country:N_Diego,
     Title: "Entrenador de potencial humano",
     Resume: "Master en coaching directivo y liderazgo, coach profesional en método points of new con más de 500 horas de capacitación en desarrollo humano, coordinador de programa de liderazgo en empresas internacionales, y 8 años de experiencia en transformación",
   },
@@ -26,6 +30,7 @@ const TrainersTeam = [
     id: 2,
     Name: "Alex Suarez",
     Image: FotoAlex,
+    Country:N_Alex,
     Title: "Entrenador de potencial humano",
     Resume: `Entrenador y facilitador de procesos transformacionales y coach profesional. 
     Con 8 años de experiencia en el mundo del desarrollo integral y más de 100 talleres impartidos en varios países como Ecuador, Colombia Perú y México`,
@@ -35,6 +40,7 @@ const TrainersTeam = [
     id: 3,
     Name: "Mariano Schapovaloff",
     Image: FotoMariano,
+    Country:N_Mariano,
     Title: "Entrenador de potencial humano",
     Resume: "Mentor y master en pnl, certificado en coaching ontológico, deportivo, ejecutivo, shadow coaching, especialista en desarrollo personal y liderazgo, entrenador de habilidades blandas, conferencista internacional, más de 2500 horas como coach, 15 años de experiencia.",
   },
@@ -86,9 +92,9 @@ const Trainers = ({ className }) => {
 };
 
 export default styled(Trainers)`
-background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+/* background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
  background-blend-mode: multiply,multiply;
- background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
+ background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%); */
 
   /* padding: 40px 0; */
   /* background-color:black; */

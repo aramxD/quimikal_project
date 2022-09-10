@@ -5,25 +5,27 @@ import quimikalLogo from "../assets/logo full p.png";
 const Welcome = ({ className }) => {
   return (
     <section className={className}>
-      <Hero>
+      <div className="imgHero">
         <img src={quimikalLogo} alt="" />
-        <p>
-          Desde hace muchos años, el coaching y el mentoring se han convertido
-          en las opciones preferidas por millones de personas para dar saltos de
-          calidad en sus vidas personales y profesionales.
-        </p>
-        <p>
-          <u>
-            En las épocas de crisis es una de las actividades de crecimiento
-            exponencial; y se augura que, en la transformación actual y la
-            aceleración digital, sea uno de los sectores con mayor relevancia.
-            Quienes nos dedicamos a esta actividad en forma profesional
-            observamos una mayor demanda en épocas de incertidumbre. (fuente
-            infobae.com)
-          </u>
-        </p>
-        
-        </Hero>
+      </div>
+      <Hero>
+        <div className="contentHero">
+          <p>
+            Desde hace muchos años, el coaching y el mentoring se han convertido
+            en las opciones preferidas por millones de personas para dar saltos
+            de calidad en sus vidas personales y profesionales.
+          </p>
+          <p>
+            <u>
+              En las épocas de crisis es una de las actividades de crecimiento
+              exponencial; y se augura que, en la transformación actual y la
+              aceleración digital, sea uno de los sectores con mayor relevancia.
+              Quienes nos dedicamos a esta actividad en forma profesional
+              observamos una mayor demanda en épocas de incertidumbre. (fuente
+              infobae.com)
+            </u>
+          </p>
+        </div>
         <iframe
           width="560"
           height="315"
@@ -33,21 +35,19 @@ const Welcome = ({ className }) => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
-      
+      </Hero>
     </section>
   );
 };
 
 const Hero = styled.div`
   max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-
-  img {
-    margin: 30px 0 10px 0;
-    padding: 10px;
+  .contentHero {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.816);
-    border-radius: 35px;
   }
   p {
     margin: 15px 0;
@@ -64,14 +64,22 @@ const Hero = styled.div`
     font-size: 20px;
     letter-spacing: 1.2px;
   }
-
+  iframe {
+    margin: 10px;
+    width: 100%;
+  }
   @media (min-width: 800px) {
-     img{
-      width:40%;
-     }
-     p  {
-      width:40%
-     }
+    flex-direction: row;
+    .contentHero{
+    width:44%
+  }
+    iframe {
+      margin: 10px;
+      width: 55%;
+    }
+    p {
+      width: 100%;
+    }
   }
 `;
 
@@ -94,9 +102,21 @@ export default styled(Welcome)`
   background-size: cover; /* Resize the background image to cover the entire container */
   z-index: 2;
 
-  
-  iframe {
-    margin: 10px;
+  .imgHero {
+    max-width: 800px;
     width: 100%;
+    height: auto;
+    margin: 30px 0 10px 0;
+    background-color: rgba(255, 255, 255, 0.816);
+    border-radius: 35px;
+  }
+  img {
+    padding: 10px;
+    width: 100%;
+  }
+  @media (min-width: 800px) {
+    img {
+      width: 40%;
+    }
   }
 `;

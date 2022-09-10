@@ -8,6 +8,7 @@ import Methodology from './components/Methodology'
 import Testimonials from './components/Testimonials'
 import Timer from './components/Timer'
 import Footer from './components/Footer';
+import Galery from './components/Gallery';
  
 const initialOptions = {
   "client-id": "AZOcVqZIJ-DQDK76__TvAOLVxDSkSJeSn2ky9nkPL7XuFNs9TrAA2l4bWS-uZ6KXU2Q1dJFLkN_53u8y",
@@ -26,7 +27,7 @@ function App() {
       <Welcome/>
       <KnowledgeRoute/>
        <Trainers/> 
-      
+      <Galery/>
       <Methodology/>
       <Testimonials/>
       <Timer/>

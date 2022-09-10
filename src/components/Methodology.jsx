@@ -14,30 +14,30 @@ const Methodology = ({ className }) => {
       <section className={className}>
         <h2>Metodologia</h2>
         <div className="methodologyStep">
-          <p>Modulos Presenciales</p>
+          <p>3 módulos presenciales y 2 módulos virtuales</p>
           <img src={img1} alt="" />
         </div>
 
-        <div className="methodologyStep">
-          <p>Tareas, Metas y Planes guiadas</p>
+        {/* <div className="methodologyStep">
+          <p></p>
           <img src={img2} alt="" />
-        </div>
+        </div> */}
 
         <div className="methodologyStep">
-          <p>Coachings personales y Mejora continua</p>
+          <p>Tareas, metas y planificación guiada</p>
           <img src={img3} alt="" />
         </div>
 
         <div className="methodologyStep">
-          <p>Practicas de coaching</p>
+          <p>Coachings personales en el Ser</p>
           <img src={img4} alt="" />
         </div>
         <div className="methodologyStep">
-          <p>Coaching observados</p>
+          <p>Prácticas de coaching</p>
           <img src={img5} alt="" />
         </div>
         <div className="methodologyStep">
-          <p>Practicas Staff</p>
+          <p>Creación de Videos y tu Taller</p>
           <img src={img6} alt="" />
         </div>
       </section>

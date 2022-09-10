@@ -4,7 +4,12 @@ import styled from "styled-components";
 const TrainerCard = ({ className, Trainer }) => {
   return (
     <article className={className}>
+      <div className="imgCard">
       <img src={Trainer.Image} alt={Trainer.Name} />
+      <div className="imgCountry">
+      <img src={Trainer.Country} alt={Trainer.Name} />
+      </div>
+      </div>
       <div className="trainerData">
         <h3>{Trainer.Name}</h3>
         <h4>{Trainer.Title}</h4>
@@ -28,7 +33,10 @@ export default styled(TrainerCard)`
   /* padding: 20px; */
   margin: 0 auto;
   color: white;
-  img {
+  /* .imgCard{
+    position:absolute;
+  } */
+  .imgCard > img {
     height: 220px;
     width: 220px;
     border-radius: 10px;
@@ -40,6 +48,14 @@ export default styled(TrainerCard)`
     -webkit-backdrop-filter: blur(16px);
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.752);
+  }
+  .imgCountry{
+    position:relative;
+    top:-50px;
+    left:-80px;
+  }
+  .imgCountry > img{
+    width:40px;
   }
   .trainerData{
     width:100%;
