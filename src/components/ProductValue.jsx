@@ -8,11 +8,22 @@ const ProductValue = ({className}) =>{
 
             <h2>Certificate como Coach</h2>
             <p>Se parte de la transformacion Humana</p>
-            <p>Esta certificacion </p>
+            <p> </p>
         </section>
     )
 }
 
 
 export default styled(ProductValue)`
-color:white;`
+width: 90vw;
+  max-width: 800px;
+  margin: 0 auto;
+  color: white;
+
+
+h2 {
+    margin: 30px 0 10px 0;
+    border-top: solid 4px;
+    border-bottom: solid 4px;
+    padding: 20px 0;
+  }`

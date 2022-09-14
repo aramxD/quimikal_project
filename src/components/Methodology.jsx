@@ -41,7 +41,7 @@ const Methodology = ({ className }) => {
           <img src={img6} alt="" />
         </div>
       </section>
-      <CTA />
+      {/* <CTA /> */}
     </>
   );
 };
