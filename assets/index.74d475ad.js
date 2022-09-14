@@ -642,7 +642,7 @@ To fix the issue, add '`.concat(n,"' to the list of components passed to the par
   img {
     width: 120px;
   }
-`,ay="https://www.quimikal.com/assets/Galeria 1.0cf3d1aa.jpeg",uy="https://www.quimikal.com/assets/Galeria 2.3c204841.jpeg",cy="https://www.quimikal.com/assets/Galeria 3.e228f6e5.jpeg",dy="https://www.quimikal.com/assets/Galeria 4.52053d7f.jpeg",fy="https://www.quimikal.com/assets/Galeria 5.147515d2.jpeg",py="https://www.quimikal.com/assets/Galeria 6.a9faf8ef.jpeg",hy="https://www.quimikal.com/assets/Galeria 7.77743571.jpeg",my=[{id:1,img:ay},{id:2,img:uy},{id:3,img:cy},{id:4,img:dy},{id:5,img:fy},{id:6,img:py},{id:7,img:hy}],gy=({className:e})=>ee("section",{className:e,children:[b("h2",{children:"Unete a nosotros"}),b(Ql,{breakpoints:{320:{width:320,slidesPerView:1},640:{width:640,slidesPerView:1},768:{width:768,slidesPerView:2}},modules:[ja,Fa,Ba,Ha],spaceBetween:5,onSlideChange:()=>console.log("slide change"),onSwiper:t=>console.log(t),children:my.map(t=>b(Xl,{children:b("div",{className:"imgGallery",children:b("img",{src:t.img,alt:""})})},t.id))}),b(up,{})]}),vy=Ce(gy)`
+`,ay="https://www.quimikal.com/assets/Galeria 1.0cf3d1aa.jpeg",uy="https://www.quimikal.com/assets/Galeria 2.3c204841.jpeg",cy="https://www.quimikal.com/assets/Galeria 3.e228f6e5.jpeg",dy="https://www.quimikal.com/assets/Galeria 4.52053d7f.jpeg",fy="https://www.quimikal.com/assets/Galeria 5.147515d2.jpeg",py="https://www.quimikal.com/assets/Galeria 6.a9faf8ef.jpeg",hy="https://www.quimikal.com/assets/Galeria 7.77743571.jpeg",my=[{id:1,img:ay},{id:2,img:uy},{id:3,img:cy},{id:4,img:dy},{id:5,img:fy},{id:6,img:py},{id:7,img:hy}],gy=({className:e})=>ee("section",{className:e,children:[b("h2",{children:"Unete a nosotros"}),b(Ql,{breakpoints:{320:{width:320,slidesPerView:1},640:{width:640,slidesPerView:1},768:{width:768,slidesPerView:2}},modules:[ja,Fa,Ba,Ha],spaceBetween:5,onSlideChange:()=>console.log("slide change"),onSwiper:t=>console.log(t),children:my.map(t=>b(Xl,{children:b("div",{className:"imgGallery",children:b("img",{src:t.img,alt:""})})},t.id))})]}),vy=Ce(gy)`
 width:90vw;
 max-width:800px;
 margin: 50px auto;
@@ -667,7 +667,7 @@ img{
     color: white;
   }
 `,yy=({className:e})=>ee("section",{className:e,children:[b("h2",{children:"Certificate como Coach"}),b("p",{children:"Se parte de la transformacion Humana"}),b("p",{children:" "})]}),wy=Ce(yy)`
-width: 90vw;
+    width: 90vw;
   max-width: 800px;
   margin: 0 auto;
   color: white;
@@ -678,4 +678,4 @@ h2 {
     border-top: solid 4px;
     border-bottom: solid 4px;
     padding: 20px 0;
-  }`,Sy={"client-id":"AZOcVqZIJ-DQDK76__TvAOLVxDSkSJeSn2ky9nkPL7XuFNs9TrAA2l4bWS-uZ6KXU2Q1dJFLkN_53u8y",currency:"USD",intent:"capture"};function xy(){return b(eg,{options:Sy,children:ee("div",{className:"App",children:[b(i0,{}),b(B1,{}),b(P1,{}),b(vy,{}),b(K1,{}),b(wy,{}),b(iy,{}),b(oy,{})]})})}bs.createRoot(document.getElementById("root")).render(b(St.StrictMode,{children:b(xy,{})}));
+  }`,Sy={"client-id":"AZOcVqZIJ-DQDK76__TvAOLVxDSkSJeSn2ky9nkPL7XuFNs9TrAA2l4bWS-uZ6KXU2Q1dJFLkN_53u8y",currency:"USD",intent:"capture"};function xy(){return b(eg,{options:Sy,children:ee("div",{className:"App",children:[b(i0,{}),b(B1,{}),b(P1,{}),b(vy,{}),b(up,{}),b(K1,{}),b(wy,{}),b(iy,{}),b(oy,{})]})})}bs.createRoot(document.getElementById("root")).render(b(St.StrictMode,{children:b(xy,{})}));
