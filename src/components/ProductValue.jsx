@@ -15,7 +15,7 @@ const ProductValue = ({className}) =>{
 
 
 export default styled(ProductValue)`
-width: 90vw;
+    width: 90vw;
   max-width: 800px;
   margin: 0 auto;
   color: white;

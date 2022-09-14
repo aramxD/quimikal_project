@@ -10,7 +10,7 @@ import Timer from "./components/Timer";
 import Footer from "./components/Footer";
 import Galery from "./components/Gallery";
 import ProductValue from "./components/ProductValue";
-
+import CTA from "./elements/CTA";
 
 
 const initialOptions = {
@@ -28,6 +28,7 @@ function App() {
         <KnowledgeRoute />
         <Trainers />
         <Galery />
+        <CTA/>
         <Methodology />
         {/* <Testimonials /> */}
         <ProductValue/>

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import CTA from "../elements/CTA";
+ 
 
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
@@ -66,8 +66,9 @@ const Gallery = ({ className }) => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <CTA/>
+      
     </section>
+     
   );
 };
 
