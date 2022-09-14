@@ -8,6 +8,7 @@ const ProductValue = ({className}) =>{
 
             <h2>Certificate como Coach</h2>
             <p>Se parte de la transformacion Humana</p>
+            <p>Esta certificacion </p>
         </section>
     )
 }

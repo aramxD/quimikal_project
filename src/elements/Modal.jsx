@@ -13,8 +13,9 @@ const Modal = ({children, title, showModal ,setShowModal} ) => {
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAiRJREFUSEudlutx4zAMhD9UcOkkKSHpRB1cUpFKyLWQDlSKXQFvKMJ8AhQd/vCMZBILLBZLCXEJEM6f83G2yq52f/3k7SlYCTKvJ/CH3FbS7pNrgachvfCCEHzSBjoE+X2VRhJ+XkMXG6qXaddshyoVeJV2FZfCDqd8EV0JMQceaI2tyar28VeUPEzHRdkV1Qs7u2mzyfHjuKp2qHsBvoEv4Bh00B7agL/AB8Ktl3kDPNA4JnwIvAa4nQE78If5CGELsGvDfoD3tnljK/v/+8JjFbu+bMCrpDcIukfuEN5TgrO5r8TljZOAVnPuuCF8EIhMRJOtE7unSjkmmOehStXG2LSvNpBdT90IJ+1vFRsF1CxmjG9oyqWoovTseRReXC1oD+yYnO8DNv6GsOeLTLgTlF7DFDw/ci1zMjYKnC+GB+1GX3WPxenU10fvTUJK7yO9fyy1e27YFLNi6HpgUK/AWyi023PuCG3Jq/FGJmVU1F6bzJRKvPu4MbdNCLvadFKvcHRfSa7JDO3Vm2rhkpADwqs1Mp3pZ5MR+AnJSJzVXYtFFE3IFwj/ED6jW5VItWLz/lj5p7pX7HlaWmW2rOxcfmo2U7VsVyRc4+v+9M1lDO2FNurCSyFPjMhvDMTkZ8UP+vqeIPrqBq1CjeZT9bv7oJ+2a0pjq+/667Poaul2MkgwKniipaZIW9VfKLabXUOY5ph1wI85vhiJegyngvBGxIj/HwdOCjal5sIiAAAAAElFTkSuQmCC"/>
             </CloseButton>
 
+            <ModalContet>
             {children}
-
+            </ModalContet>
 
 
         </ModalContainer>
@@ -44,12 +45,14 @@ const Overlay = styled.div`
 
 const ModalContainer = styled.div`
     width:80%;
+    max-height:80%;
     min-height:200px;
     background:#fff;
     position: relative;
     border-radius:8px;
     box-shadow: rgba(100,100,111,.2) 0px 7px 29px 0px;
     padding:20px;
+    overflow-y:auto;
 `
 
 const ModalTitle = styled.div`
@@ -92,11 +95,16 @@ const CloseButton = styled.button`
      
 `
 
-const Content = styled.div`
+const ModalContet = styled.div`
     display:flex;
     flex-direction:column;
-    align-items:center;
-
+    align-items: stretch;
+    justify-content: center;
+    margin:0 auto;
+    width:100%;
+    max-width:600px;
+    height:60%;
+    overflow-y:auto;
     h2{
         font-size:30px;
         font-weight:700;
