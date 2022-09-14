@@ -6,10 +6,10 @@ const Payment = () => {
   const [paidFor, setPaidFor] = useState(false);
   const [loaded, setLoaded] = useState(false);
 
-  let paypalRef = useRef();
+  // let paypalRef = useRef();
 
   const product = {
-    price: 600,
+    price: 713.12 ,
     description: "certificacion couch",
     currency: "USD",
   };
@@ -70,7 +70,7 @@ const Payment = () => {
             purchase_units: [
               {
                 amount: {
-                  value: "1",
+                  value: product.price,
                 },
               },
             ],

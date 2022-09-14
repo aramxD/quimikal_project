@@ -14,7 +14,7 @@ const KnowledgeSteps = [
   {
     id: 2,
     title: "Modulo 2",
-    content: "Coaching corporal desde la emoción y coaching a la acción",
+    content: "Coaching corporal desde la emoción, coaching a la acción y desarrollo de modelos de equipo (líder presente)",
     image:
       "https://images.unsplash.com/photo-1470506926202-05d3fca84c9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
   },
@@ -82,7 +82,7 @@ const KnowledgeCard = styled.article`
   @media (min-width: 600px) {
     flex-direction: column;
     width: 48%;
-    height: 320px;
+    height: 330px;
 
     .articleContent {
       width: 100%;
@@ -99,6 +99,9 @@ const KnowledgeCard = styled.article`
     }
     .articleImage {
       width: 100%;
+    }
+    p{
+      font-size:18px;
     }
   }
 `;

@@ -9,7 +9,7 @@ const defaultRemainingTime = {
   horas: "00",
   dias: "00",
 };
-const dateTimestampMs = 1662879600000;
+const dateTimestampMs = 1663358400000;
 
 const Timer = ({ className }) => {
   const [remainingTime, setRemainingTime] = useState(defaultRemainingTime);
@@ -48,7 +48,7 @@ const Timer = ({ className }) => {
         NO TE PIERDAS ESTA GRAN OPORTUNIDAD <br/>¡ INICIA TU PROCESO DE CERTIFICACION!
         </p>
         <p className="precioPromo">
-            $534.90 USD
+            $713.12 USD
         </p>
       </div>
       <CTA/>

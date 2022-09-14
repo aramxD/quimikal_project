@@ -75,7 +75,7 @@ max-width:800px;
 margin: 50px auto;
 color: white;
   h2 {
-    margin: 30px 0 10px 0;
+    margin: 30px 0 60px 0;
     border-top: solid 4px;
     border-bottom: solid 4px;
     padding: 20px 0;
