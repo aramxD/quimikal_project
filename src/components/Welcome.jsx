@@ -7,27 +7,28 @@ const Welcome = ({ className }) => {
     <section className={className}>
       <div className="imgHero">
         <h1>Certificacion de Coaching</h1>
-        <p>by</p><img src={quimikalLogo} alt="" />
+        <p>by</p>
+        <img src={quimikalLogo} alt="" />
       </div>
       <Hero>
         <div className="contentHero">
           <p>
             Desde hace muchos años, el coaching y el mentoring se han convertido
             en las opciones preferidas por millones de personas para dar saltos
-            de calidad en sus vidas personales y profesionales.<br/>
+            de calidad en sus vidas personales y profesionales.
+            <br />
             En las épocas de crisis es una de las actividades de crecimiento
-              exponencial; y se augura que, en la transformación actual y la
-              aceleración digital, sea uno de los sectores con mayor relevancia.
-              Quienes nos dedicamos a esta actividad en forma profesional
-              observamos una mayor demanda en épocas de incertidumbre. (fuente
-              infobae.com)
+            exponencial; y se augura que, en la transformación actual y la
+            aceleración digital, sea uno de los sectores con mayor relevancia.
+            Quienes nos dedicamos a esta actividad en forma profesional
+            observamos una mayor demanda en épocas de incertidumbre. (fuente
+            infobae.com)
           </p>
-          
         </div>
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/shCac5cCOXM"
+          src="https://www.youtube.com/embed/0j_PVcZzoE4"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -68,21 +69,20 @@ const Hero = styled.div`
   }
   @media (min-width: 800px) {
     flex-direction: row;
-    .contentHero{
-    width:53%
-  }
+    .contentHero {
+      width: 53%;
+    }
     iframe {
       margin: 10px;
       width: 45%;
     }
     p {
       width: 100%;
-      font-size:18px;
+      font-size: 18px;
     }
     p:nth-child(2) {
-     font-size: 18px;
-     
-  }
+      font-size: 18px;
+    }
   }
 `;
 
@@ -90,7 +90,7 @@ export default styled(Welcome)`
   display: flex;
   flex-direction: column;
   width: 100vw;
-  max-width:1250px;
+  max-width: 1250px;
   height: auto;
   padding: 0 5vw;
 
@@ -113,9 +113,9 @@ export default styled(Welcome)`
     margin: 30px 0 10px 0;
     background-color: rgba(255, 255, 255, 0.816);
     border-radius: 35px;
-    padding:10px;
+    padding: 10px;
   }
-  h1{
+  h1 {
     font-size: 40px;
   }
   img {
