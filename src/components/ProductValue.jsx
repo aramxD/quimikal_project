@@ -8,7 +8,7 @@ const ProductValue = ({className}) =>{
 
             <h2>Certificate como Coach</h2>
             <p>Se parte de la transformacion Humana</p>
-            <p> </p>
+            <p> PRECIO: $1,783.00 USD</p>
         </section>
     )
 }

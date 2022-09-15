@@ -9,7 +9,7 @@ const defaultRemainingTime = {
   horas: "00",
   dias: "00",
 };
-const dateTimestampMs = 1663358400000;
+const dateTimestampMs = 1663570799000;
 
 const Timer = ({ className }) => {
   const [remainingTime, setRemainingTime] = useState(defaultRemainingTime);
@@ -28,9 +28,10 @@ const Timer = ({ className }) => {
   return (
     <section className={className}>
       <div className="timer">
-        <p>¿Estás preparad@ para tu independencia económica?</p>
+        <p>¿Estás preparad@ para tomar esta Oportunidad?</p>
         <p>¡TE ESPERAMOS!</p>
-        <h3>¡NO TE QUEDES FUERA!</h3>
+        <h3>¡NO TE QUEDES FUERA! <br/><br/>  - 70% de Descuento -</h3>
+        
 
         <div className="countDownTimer">
           <span>{remainingTime.dias}</span>
@@ -48,7 +49,7 @@ const Timer = ({ className }) => {
         NO TE PIERDAS ESTA GRAN OPORTUNIDAD <br/>¡ INICIA TU PROCESO DE CERTIFICACION!
         </p>
         <p className="precioPromo">
-            $713.12 USD
+            $534.90 USD
         </p>
       </div>
       <CTA/>
