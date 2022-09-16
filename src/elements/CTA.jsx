@@ -101,7 +101,7 @@ const CTA = ({ className }) => {
 
         {stepForm && 
         <>
-        <p>Total a pagar $713.12</p>
+        <p>Total a pagar $534.90</p>
         <Payment />
         </>}
       </Modal>
