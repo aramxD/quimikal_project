@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 import Galery from "./components/Gallery";
 import ProductValue from "./components/ProductValue";
 import CTA from "./elements/CTA";
-
+import CourseBenefits from "./components/CourseBenefits";
 
 const initialOptions = {
   "client-id":
@@ -31,6 +31,7 @@ function App() {
         <CTA/>
         <Methodology />
         {/* <Testimonials /> */}
+        <CourseBenefits/>
         <ProductValue/>
         <Timer />
         <Footer />
