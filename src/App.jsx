@@ -31,7 +31,9 @@ const phoneNumber = '526642171518'
 const accountName = 'Quimikal Academy'
 const statusMessage = 'Tiempo de respuesta: 15 min.'
 const chatMessage = 'Hola 😃 \n como te puedo ayudar? ' 
-
+const className= {'z-index':1000}
+ 
+const allowClickAway = true
 
 function App() {
 
@@ -55,7 +57,10 @@ function App() {
         accountName={accountName} 
         avatar ={whattsappAvatar}
         statusMessage={statusMessage}
-        chatMessage={chatMessage}/>
+        chatMessage={chatMessage}
+        allowClickAway={allowClickAway}
+        className={className}
+        />
         <Footer />
       </div>
     </PayPalScriptProvider>
