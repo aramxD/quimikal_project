@@ -15,7 +15,7 @@ import CourseBenefits from "./components/CourseBenefits";
 import FloatingWhatsApp from 'react-floating-whatsapp';
 
 
-import whattsappAvatar from './assets/TrainerDiegoEspinosa2.png'
+
 
 
 
@@ -27,6 +27,7 @@ const initialOptions = {
 };
 
   //whattsApp Config
+  import whattsappAvatar from './assets/LogoCuadrado.jpeg'
 const phoneNumber = '573114547455'
 const accountName = 'Quimikal Academy'
 const statusMessage = 'Tiempo de respuesta: 15 min.'
