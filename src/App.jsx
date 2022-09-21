@@ -27,7 +27,7 @@ const initialOptions = {
 };
 
   //whattsApp Config
-const phoneNumber = '526642171518'
+const phoneNumber = '573114547455'
 const accountName = 'Quimikal Academy'
 const statusMessage = 'Tiempo de respuesta: 15 min.'
 const chatMessage = 'Hola 😃 \n como te puedo ayudar? ' 
