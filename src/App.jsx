@@ -12,6 +12,12 @@ import Galery from "./components/Gallery";
 import ProductValue from "./components/ProductValue";
 import CTA from "./elements/CTA";
 import CourseBenefits from "./components/CourseBenefits";
+import FloatingWhatsApp from 'react-floating-whatsapp';
+
+
+import whattsappAvatar from './assets/TrainerDiegoEspinosa2.png'
+
+
 
 const initialOptions = {
   "client-id":
@@ -20,7 +26,17 @@ const initialOptions = {
   intent: "capture",
 };
 
+  //whattsApp Config
+const phoneNumber = '526642171518'
+const accountName = 'Quimikal Academy'
+const statusMessage = 'Tiempo de respuesta: 15 min.'
+const chatMessage = 'Hola 😃 \n como te puedo ayudar? ' 
+
+
 function App() {
+
+
+
   return (
     <PayPalScriptProvider options={initialOptions}>
       <div className="App">
@@ -34,6 +50,12 @@ function App() {
         <CourseBenefits/>
         <ProductValue/>
         <Timer />
+        <FloatingWhatsApp 
+        phoneNumber={phoneNumber} 
+        accountName={accountName} 
+        avatar ={whattsappAvatar}
+        statusMessage={statusMessage}
+        chatMessage={chatMessage}/>
         <Footer />
       </div>
     </PayPalScriptProvider>

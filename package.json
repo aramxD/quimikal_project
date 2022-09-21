@@ -13,6 +13,7 @@
     "dayjs": "^1.11.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-floating-whatsapp": "^4.0.5",
     "react-paypal-js": "^0.0.1-security",
     "styled-components": "^5.3.5",
     "swiper": "^8.3.2"
