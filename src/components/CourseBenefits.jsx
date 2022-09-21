@@ -43,6 +43,7 @@ export default styled(CourseBenefits)`
   width: 90vw;
   max-width: 800px;
   margin: 0 auto;
+  color: rgb(250, 250, 250);
   h2 {
     width: 100%;
     margin: 30px 0 10px 0;
@@ -55,26 +56,30 @@ export default styled(CourseBenefits)`
   }
   .benefitsContent {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: space-around;
   }
   .benefitsImg {
-    width: 100%;
+    width: 80%;
   }
   .benefitsImg img {
     width: 100%;
+    border-radius:30px;
+    /* background: #acacac; */
+-webkit-box-shadow: 10px 10px 10px #404040, -10px -10px 10px #000000;
+box-shadow: 10px 10px 10px #000000, -10px -10px 10px #474747;
   }
   .benefitsList {
-    margin-left: 10px;
+    margin:30px 10px;
     width: 80%;
   }
   ol {
     text-align: left;
   }
 
-  color: rgb(250, 250, 250);
-  background-color: rgb(0, 0, 0);
+  
+  
   p {
     font-size: 12px;
   }

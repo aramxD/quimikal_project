@@ -18,7 +18,7 @@ export default styled(Footer)`
   align-items: center;
 
   color: rgb(250, 250, 250);
-  background-color: rgb(0, 0, 0);
+  
   p {
     font-size: 12px;
   }
