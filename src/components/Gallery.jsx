@@ -33,7 +33,7 @@ const galleryArray = [
 const Gallery = ({ className }) => {
   return (
     <section className={className}>
-      <h2>Unete a nosotros</h2>
+      <h2>Únete a nosotros</h2>
 
       <Swiper
         breakpoints={{

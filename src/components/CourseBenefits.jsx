@@ -6,8 +6,8 @@ import benefitsImg from "../assets/Galeria/Galeria 3.jpeg";
 const CourseBenefits = ({ className }) => {
   return (
     <section className={className}>
-      <h2>Beneficios de la Certificacion</h2>
-      <h3>Certificate y comparte estos beneficios</h3>
+      <h2>Que obtendras con la Certificación</h2>
+      <h3>Certifícate y comparte estos beneficios</h3>
       <div className="benefitsContent">
         <div className="benefitsImg">
           <img src={benefitsImg} alt="" />
@@ -15,15 +15,15 @@ const CourseBenefits = ({ className }) => {
         <div className="benefitsList">
           <ol>
             <li>Visualizar y delimitar objetivos</li>
-            <li>Facilitar la autonomia y el empoderamiento</li>
+            <li>Facilitar la autonomía y el empoderamiento</li>
             <li>
               Aumento de la flexibilidad mental y mejora de la rigidez mental
             </li>
             <li>Fomenta la creatividad</li>
-            <li>Mejora la manera de relacionarnos con los demas</li>
-            <li>Mejora la comunicacion</li>
-            <li>Mejora la motivacion y ayuda a identificar motivaciones</li>
-            <li>Disminuye el estres y la ansiedad</li>
+            <li>Mejora la manera de relacionarnos con los demás</li>
+            <li>Mejora la comunicación</li>
+            <li>Mejora la motivación y ayuda a identificar motivaciones</li>
+            <li>Disminuye el estrés y la ansiedad</li>
             <li>Se busca el bienestar emocional</li>
             <li>Mejora el autoconocimiento</li>
           </ol>

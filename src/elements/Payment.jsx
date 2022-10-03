@@ -10,7 +10,7 @@ const Payment = () => {
 
   const product = {
     price: 534.90 ,
-    description: "certificacion couch",
+    description: "certificación couch",
     currency: "USD",
   };
   // useEffect(() => {

@@ -6,7 +6,7 @@ const Welcome = ({ className }) => {
   return (
     <section className={className}>
       <div className="imgHero">
-        <h1>Certificacion de Coaching</h1>
+        <h1>Certificación de Coaching</h1>
         <p>by</p>
         <img src={quimikalLogo} alt="" />
       </div>

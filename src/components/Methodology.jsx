@@ -12,7 +12,7 @@ const Methodology = ({ className }) => {
   return (
     <>
       <section className={className}>
-        <h2>Metodologia</h2>
+        <h2>Metodología</h2>
         <div className="methodologyStep">
           <p>3 módulos presenciales y 2 módulos virtuales</p>
           <img src={img1} alt="" />

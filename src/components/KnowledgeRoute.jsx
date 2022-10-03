@@ -5,7 +5,7 @@ import CTA from "../elements/CTA";
 const KnowledgeSteps = [
   {
     id: 1,
-    title: "Modulo 1",
+    title: "Módulo 1",
     content:
       "Introducción al mundo del coaching y cómo éste se puede llevar a cabo en sala, o uno a uno.",
     image:
@@ -13,14 +13,14 @@ const KnowledgeSteps = [
   },
   {
     id: 2,
-    title: "Modulo 2",
+    title: "Módulo 2",
     content: "Coaching corporal desde la emoción, coaching a la acción y desarrollo de modelos de equipo (líder presente)",
     image:
       "https://images.unsplash.com/photo-1470506926202-05d3fca84c9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
   },
   {
     id: 3,
-    title: "Modulo 3",
+    title: "Módulo 3",
     content:
       "Como a llevar a cabo sesiones de coaching tanto a la acción como a la emoción según ICF. (www.icf.org)",
     image:

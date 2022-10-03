@@ -24,16 +24,16 @@ const TrainersTeam = [
     Image: FotoDiego,
     Country:N_Diego,
     Title: "Entrenador de potencial humano",
-    Resume: "Master en coaching directivo y liderazgo, coach profesional en método points of new con más de 500 horas de capacitación en desarrollo humano, coordinador de programa de liderazgo en empresas internacionales, y 8 años de experiencia en transformación",
+    Resume: "Master en coaching directivo y liderazgo, coach profesional con más de 500 horas de capacitación en desarrollo humano, coordinador de programa de liderazgo en empresas internacionales, y 8 años de experiencia en transformación.",
   },
   {
     id: 2,
-    Name: "Alex Suarez",
+    Name: "Alex Suárez",
     Image: FotoAlex,
     Country:N_Alex,
     Title: "Entrenador de potencial humano",
     Resume: `Entrenador y facilitador de procesos transformacionales y coach profesional. 
-    Con 8 años de experiencia en el mundo del desarrollo integral y más de 100 talleres impartidos en varios países como Ecuador, Colombia Perú y México`,
+    Con 8 años de experiencia en el mundo del desarrollo integral y más de 100 talleres impartidos en varios países como Ecuador, Colombia, Perú y México.`,
   },
   
   {

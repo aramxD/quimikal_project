@@ -52,10 +52,10 @@ const CTA = ({ className }) => {
   return (
     <div className={className}>
       <div className="CTA">
-        <button onClick={() => setShowModal(!showModal)}>INSCRIBETE!</button>
+        <button onClick={() => setShowModal(!showModal)}>¡INSCRÍBETE!</button>
       </div>
       <Modal
-        title="Inscribete"
+        title="Inscríbete"
         showModal={showModal}
         setShowModal={setShowModal}
       >
@@ -77,7 +77,7 @@ const CTA = ({ className }) => {
               value={dataForm.apeido}
               onChange={onChange}
             />
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Email:</label>
             <input
               type="email"
               id="email"
@@ -85,7 +85,7 @@ const CTA = ({ className }) => {
               value={dataForm.email}
               onChange={onChange}
             />
-            <label htmlFor="telefono">Telefono:</label>
+            <label htmlFor="telefono">Teléfono:</label>
             <input
               type="text"
               id="telefono"
