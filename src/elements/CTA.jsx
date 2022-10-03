@@ -46,7 +46,7 @@ const CTA = ({ className }) => {
   const onSubmit = (event) => {
     sendData(dataForm);
     setStepForm(true);
-    console.log(dataForm);
+    //console.log(dataForm);
   };
 
   return (
