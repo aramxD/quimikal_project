@@ -120,20 +120,21 @@ To fix the issue, add '`.concat(n,"' to the list of components passed to the par
   display: flex;
   flex-direction: column;
   width: 100vw;
-  max-width: 1250px;
+  //max-width: 1250px;
   height: auto;
   padding: 0 5vw;
 
   text-align: center;
   font-style: italic;
   align-items: center;
-  margin: 0 auto;
+  //margin: 0 auto;
 
   color: black;
   background-image: url("https://images.unsplash.com/photo-1627931539006-d5c4677e05ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
+  background-size: contain;
   z-index: 2;
 
   .imgHero {
@@ -152,12 +153,16 @@ To fix the issue, add '`.concat(n,"' to the list of components passed to the par
     padding: 0;
     width: 100%;
   }
+
   @media (min-width: 600px) {
+    padding: 0 5vw;
+     
     img {
       width: 70%;
     }
   }
   @media (min-width: 800px) {
+    padding: 0 5vw;
     img {
       width: 40%;
     }
