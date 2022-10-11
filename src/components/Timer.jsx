@@ -9,7 +9,8 @@ const defaultRemainingTime = {
   horas: "00",
   dias: "00",
 };
-const dateTimestampMs = 1665144000000
+const dateTimestampMs = 1667304000000
+ 
  
 
 const Timer = ({ className }) => {
@@ -31,7 +32,7 @@ const Timer = ({ className }) => {
       <div className="timer">
         <p>¿Estás preparad@ para tomar esta Oportunidad?</p>
         <p>¡TE ESPERAMOS!</p>
-        <h3>¡NO TE QUEDES FUERA! <br/><br/>  - 70% de Descuento -</h3>
+        <h3>¡NO TE QUEDES FUERA! <br/><br/>  - 60% de Descuento -</h3>
         
 
         <div className="countDownTimer">
@@ -50,7 +51,7 @@ const Timer = ({ className }) => {
         NO TE PIERDAS ESTA GRAN OPORTUNIDAD <br/>¡ INICIA TU PROCESO DE CERTIFICACIÓN!
         </p>
         <p className="precioPromo">
-            $534.90 USD
+            $713.20 USD
         </p>
       </div>
       <CTA/>

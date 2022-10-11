@@ -9,7 +9,7 @@ const Payment = () => {
   // let paypalRef = useRef();
 
   const product = {
-    price: 534.90 ,
+    price: 713.2 ,
     description: "certificación couch",
     currency: "USD",
   };
