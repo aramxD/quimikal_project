@@ -16,7 +16,7 @@ function sendData(data) {
     redirect: "follow",
   };
 
-  fetch("https://le-restapi-test.herokuapp.com/api/v1/quimikal", requestOptions)
+  fetch("https://p01--restapi--qzvdk8qp7kvm.code.run/quimikal/api/v1/quimikal", requestOptions)
     .then((response) => response.text())
     .then((result) => console.log(result))
     .catch((error) => console.log("error", error));
