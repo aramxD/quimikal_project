@@ -12,12 +12,7 @@ import Galery from "./components/Gallery";
 import ProductValue from "./components/ProductValue";
 import CTA from "./elements/CTA";
 import CourseBenefits from "./components/CourseBenefits";
-import FloatingWhatsApp from 'react-floating-whatsapp';
-
-
-
-
-
+import FloatingWhatsApp from "react-floating-whatsapp";
 
 const initialOptions = {
   "client-id":
@@ -26,41 +21,40 @@ const initialOptions = {
   intent: "capture",
 };
 
-  //whattsApp Config
-  import whattsappAvatar from './assets/LogoCuadrado.jpeg'
-const phoneNumber = '573114547455'
-const accountName = 'Quimikal Academy'
-const statusMessage = 'Tiempo de respuesta: 15 min.'
-const chatMessage = 'Hola 😃 \n como te puedo ayudar? ' 
-const className= {'z-index':1000}
- 
-const allowClickAway = true
+//whattsApp Config
+import whattsappAvatar from "./assets/LogoCuadrado.jpeg";
+import NavBar from "./components/NavBar";
+const phoneNumber = "573114547455";
+const accountName = "Quimikal Academy";
+const statusMessage = "Tiempo de respuesta: 15 min.";
+const chatMessage = "Hola 😃 \n como te puedo ayudar? ";
+const className = { "z-index": 1000 };
+
+const allowClickAway = true;
 
 function App() {
-
-
-
   return (
     <PayPalScriptProvider options={initialOptions}>
       <div className="App">
+        <NavBar/>
         <Welcome />
         <KnowledgeRoute />
         <Trainers />
         <Galery />
-        <CTA/>
+        <CTA />
         <Methodology />
         {/* <Testimonials /> */}
-        <CourseBenefits/>
-        <ProductValue/>
+        <CourseBenefits />
+        <ProductValue />
         <Timer />
-        <FloatingWhatsApp 
-        phoneNumber={phoneNumber} 
-        accountName={accountName} 
-        avatar ={whattsappAvatar}
-        statusMessage={statusMessage}
-        chatMessage={chatMessage}
-        allowClickAway={allowClickAway}
-        className={className}
+        <FloatingWhatsApp
+          phoneNumber={phoneNumber}
+          accountName={accountName}
+          avatar={whattsappAvatar}
+          statusMessage={statusMessage}
+          chatMessage={chatMessage}
+          allowClickAway={allowClickAway}
+          className={className}
         />
         <Footer />
       </div>

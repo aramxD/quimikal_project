@@ -10,10 +10,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-html{
-  /* background-color: #000; */
-  /* background-image: linear-gradient(to top, #868f96 0%, #000000 100%); */
-}
+ 
 
 
 body {
@@ -22,8 +19,8 @@ body {
   background-image: linear-gradient(to top, #404040 0%, #000000 100%);
   justify-content: center;
   place-items: center;
-  min-width: 320px;
-  max-width: 800px;
+  /* min-width: 320px;
+  max-width: 800px; */
   min-height: 100vh;
 }
 
