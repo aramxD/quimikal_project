@@ -11,7 +11,7 @@ const Welcome = ({ className }) => {
         <p>by</p>
         <img src={quimikalLogo} alt="" />
       </div>
-      {/* <Hero>
+      <Hero>
         <div className="contentHero">
           <p>
             Desde hace muchos años, el coaching y el mentoring se han convertido
@@ -35,7 +35,7 @@ const Welcome = ({ className }) => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
-      </Hero> */}
+      </Hero>
     </section>
   );
 };
@@ -55,7 +55,7 @@ export default styled(Welcome)`
   //margin: 0 auto;
   
   color: black;
-  /* background-image: url("https://images.unsplash.com/photo-1627931539006-d5c4677e05ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"); */
+  background-image: url("https://images.unsplash.com/photo-1627931539006-d5c4677e05ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   
