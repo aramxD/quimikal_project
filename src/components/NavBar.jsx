@@ -46,16 +46,27 @@ export default styled(NavBar)`
   a {
     text-decoration: none;
     margin: 0 10px;
-    
 
-    font-weight:500;
-    font-size:20px;
+    font-weight: 500;
+    font-size: 20px;
   }
   li {
     list-style: none;
-    margin: 0 30px;padding:  10px 0;
+    margin: 0 30px;
+    padding: 10px 0;
   }
-  li:hover{
-    border-bottom:2px solid black
+  li:hover {
+    border-bottom: 2px solid black;
+  }
+
+  @media (max-width: 600px) {
+    display:none;
+  }
+  @media (max-width: 800px) {
+    li {
+     
+    margin: 0 10px;
+     
+  }
   }
 `;

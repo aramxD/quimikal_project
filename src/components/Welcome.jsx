@@ -64,7 +64,7 @@ export default styled(Welcome)`
 
   .imgHero {
     max-width: 800px;
-    width: 100%;
+    width: 80%;
     height: auto;
     margin: 30px 0 10px 0;
     background-color: rgba(255, 255, 255, 0.816);
@@ -72,21 +72,24 @@ export default styled(Welcome)`
     padding: 10px;
   }
   h1 {
-    font-size: 40px;
+    font-size: 32px;
   }
   img {
     padding: 0;
     width: 100%;
   }
   
-  @media (min-width: 600px) {
+  @media (max-width: 600px) {
     padding: 0 5vw;
     height: 100%;
     img {
       width: 70%;
     }
+    h1 {
+    font-size: 28px;
   }
-  @media (min-width: 800px) {
+  }
+  @media (max-width: 800px) {
     padding: 0 5vw;
     img {
       width: 40%;
@@ -101,7 +104,7 @@ export default styled(Welcome)`
     align-items: center;
   
     .contentHero {
-      width: 100%;
+      width: 80%;
     }
     p {
       margin: 15px 0;
