@@ -48,7 +48,7 @@ const TrainersTeam = [
 
 const Trainers = ({ className }) => {
   return (
-    <section id="trainers" className={className}>
+    <section id="trainers" className={className} >
       <h2>Entrenadores</h2>
 
       <div className="trainersList">

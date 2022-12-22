@@ -30,7 +30,7 @@ const KnowledgeSteps = [
 
 const KnowledgeRoute = ({ className }) => {
   return (
-    <section className={className}>
+    <section className={className} id='knowledgeRoute'>
       <h2>Ruta de Aprendizaje</h2>
       <div className="KnowledgeSteps">
         {KnowledgeSteps.map((step) => (

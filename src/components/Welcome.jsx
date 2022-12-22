@@ -4,7 +4,7 @@ import quimikalLogo from "../assets/logo full p.png";
 
 const Welcome = ({ className }) => {
   return (
-    <section className={className}>
+    <section className={className} id='Hero'>
       <div className="imgHero">
         <h1>MASTER PROFESSIONAL COACH</h1>
         <h3>Certificación de Coaching</h3>
@@ -81,7 +81,7 @@ export default styled(Welcome)`
   
   @media (min-width: 600px) {
     padding: 0 5vw;
-     
+    height: 100%;
     img {
       width: 70%;
     }

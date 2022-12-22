@@ -11,7 +11,7 @@ import img6 from "../assets/staff.svg";
 const Methodology = ({ className }) => {
   return (
     <>
-      <section className={className}>
+      <section className={className} id='methodology'>
         <h2>Metodología</h2>
         <div className="methodologyStep">
           <p>3 módulos presenciales y 2 módulos virtuales</p>

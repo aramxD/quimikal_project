@@ -6,19 +6,19 @@ function NavBar({ className }) {
     <header className={className}>
       <nav>
         <li>
-          <a href="#">Boton 1</a>
+          <a href="#Hero">Inicio</a>
         </li>
         <li>
-          <a href="#">Boton 2</a>
+          <a href="#knowledgeRoute">Modulos</a>
         </li>
         <li>
-          <a href="#">Boton 3</a>
+          <a href="#trainers">Entrenadores</a>
         </li>
         <li>
-          <a href="#">Boton 4</a>
+          <a href="#gallery">Galeria</a>
         </li>
         <li>
-          <a href="#">Boton 5</a>
+          <a href="#methodology">Metodologia</a>
         </li>
       </nav>
     </header>
