@@ -36,14 +36,7 @@ const TrainersTeam = [
     Con 8 años de experiencia en el mundo del desarrollo integral y más de 100 talleres impartidos en varios países como Ecuador, Colombia, Perú y México.`,
   },
   
-  {
-    id: 3,
-    Name: "Mariano Schapovaloff",
-    Image: FotoMariano,
-    Country:N_Mariano,
-    Title: "Entrenador de potencial humano",
-    Resume: "Mentor y master en pnl, certificado en coaching ontológico, deportivo, ejecutivo, shadow coaching, especialista en desarrollo personal y liderazgo, entrenador de habilidades blandas, conferencista internacional, más de 2500 horas como coach, 15 años de experiencia.",
-  },
+ 
 ];
 
 const Trainers = ({ className }) => {

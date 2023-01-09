@@ -32,9 +32,10 @@ const Timer = ({ className }) => {
       <div className="timer">
         <p>¿Estás preparad@ para tomar esta Oportunidad?</p>
         <p>¡TE ESPERAMOS!</p>
-        <h3>¡NO TE QUEDES FUERA! <br/><br/>  - 60% de Descuento -</h3>
+        <h3>¡NO TE QUEDES FUERA! <br/><br/>  - 50% de Descuento -</h3>
         
 
+        {/* Este es el timer 
         <div className="countDownTimer">
           <span>{remainingTime.dias}</span>
           <span>días</span>
@@ -44,7 +45,7 @@ const Timer = ({ className }) => {
           <span>min</span>
           <span>{remainingTime.segundos}</span>
           <span>s</span>
-        </div>
+        </div> */}
       </div>
       <div className="promo">
         <p>
@@ -64,6 +65,7 @@ export default styled(Timer)`
     max-width: 800px;
     margin: 30px auto;
     color:white;
+    text-align:center;
     .timer p{
       font-size:20px;
       font-style:italic; margin: 10px 0;

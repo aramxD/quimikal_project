@@ -6,6 +6,7 @@ const Welcome = ({ className }) => {
   return (
     <section className={className} id='Hero'>
       <div className="imgHero">
+        <p className="clave">M.P.C.</p>
         <h1>MASTER PROFESSIONAL COACH</h1>
         <h3>Certificación de Coaching</h3>
         <p>by</p>
@@ -26,15 +27,7 @@ const Welcome = ({ className }) => {
             infobae.com)
           </p>
         </div>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/0j_PVcZzoE4"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/18Su7Inzlxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </Hero>
     </section>
   );
@@ -61,7 +54,12 @@ export default styled(Welcome)`
   
   background-size: cover;
   z-index: 2;
-
+.clave{
+  font-size:40px;
+  margin:15px 0 ;
+  font-style:normal;
+  font-weight:500;
+}
   .imgHero {
     max-width: 800px;
     width: 80%;
@@ -72,11 +70,11 @@ export default styled(Welcome)`
     padding: 10px;
   }
   h1 {
-    font-size: 32px;
+    font-size: 42px;
   }
   img {
     padding: 0;
-    width: 100%;
+    width: 300px;
   }
   
   @media (max-width: 600px) {
@@ -126,9 +124,9 @@ export default styled(Welcome)`
       width: 100%;
     }
     @media (min-width: 800px) {
-      flex-direction: row;
+      flex-direction: column;
       .contentHero {
-        width: 53%;
+        width: 100%;
       }
       iframe {
         margin: 10px;

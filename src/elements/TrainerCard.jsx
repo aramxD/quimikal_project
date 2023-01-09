@@ -52,7 +52,7 @@ export default styled(TrainerCard)`
   .imgCountry{
     position:relative;
     top:-50px;
-    left:-80px;
+    left:10px;
   }
   .imgCountry > img{
     width:40px;
