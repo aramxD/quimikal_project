@@ -17,6 +17,7 @@ import gallery4 from "../assets/Galeria/Galeria 4.jpeg";
 import gallery5 from "../assets/Galeria/Galeria 5.jpeg";
 import gallery6 from "../assets/Galeria/Galeria 6.jpeg";
 import gallery7 from "../assets/Galeria/Galeria 7.jpeg";
+import Banderas from "../elements/Banderas";
 
 const galleryArray = [
   { id: 1, img: gallery1 },
@@ -34,7 +35,7 @@ const Gallery = ({ className }) => {
   return (
     <section className={className} id='gallery'>
       <h2>Únete a nosotros</h2>
-
+      <Banderas/>
       <Swiper
         breakpoints={{
           // when window width is >= 640px
@@ -78,7 +79,7 @@ max-width:800px;
 margin: 50px auto;
 color: white;
   h2 {
-    margin: 30px 0 60px 0;
+    margin: 30px 0 40px 0;
     border-top: solid 4px;
     border-bottom: solid 4px;
     padding: 20px 0;

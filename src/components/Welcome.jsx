@@ -39,7 +39,7 @@ export default styled(Welcome)`
   flex-direction: column;
   width: 100vw;
   //max-width: 1250px;
-  height: 100vh;
+  height: 100%;
   /* padding: 0 5vw; */
   
   text-align: center;
